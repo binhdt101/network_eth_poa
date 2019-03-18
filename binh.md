@@ -1,18 +1,24 @@
-geth init genesis.json --datadir=node0/datadir
-
+1. Create account
 geth --datadir datadir account new
 
+2. Check node info
+admin.nodeInfo
+admin.datadir
+admin.peers
+
+2. Check compiler
 admin.setSolc("path/to/solc")
 
 eth.getCompilers()
 
-
+### Fix block errors to resync
 geth  --datadir datadir  --delete-blocks 1000000
 
 
 1. reverted back the blockchain into some previous block number,
 debug.setHead("0x124F80")
 
+2. Check transaction pools
 
 txpool.status
 eth.getBlockTransactionCount("pending");
@@ -37,5 +43,9 @@ cd /app/ethereum/
 git clone https://github.com/binhdt101/network_eth_poa.git
 
 cd /app/ethereum/network_eth_poa/
-chmod +x *.sh 
+chmod +x *.sh
 ./init_network.sh
+./deploy_static_node.sh
+./run.sh
+
+###### Check info #########

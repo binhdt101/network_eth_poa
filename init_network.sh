@@ -5,7 +5,7 @@ case "$HOSTNAME" in
     ;;
     "blockchain-3")   NODENAME="node3"
     ;;
-    "block-chain5")   NODENAME="node2"
+    "block-chain5")   NODENAME="node4"
     ;;
 esac
 geth init genesis.json --datadir=$NODENAME/datadir
