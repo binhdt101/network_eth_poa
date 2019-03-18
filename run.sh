@@ -33,10 +33,10 @@ geth \
 --port $P2PPORT --rpcport $RPCPORT \
 --syncmode full --datadir $NODENAME/datadir \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins="*" \
---rpc --rpcaddr localhost   \
+--rpc --rpcaddr 0.0.0.0   \
 --rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
 --networkid 1111 --gasprice 1000   --targetgaslimit '900000000000000000' \
---rpccorsdomain "http://0.0.0.0:9000" \
+--rpccorsdomain "*" \
 --ipcdisable \
 --mine --minerthreads=30  \
 --etherbase $ACCOUNT \
