@@ -37,4 +37,5 @@ cd /app/ethereum/
 git clone https://github.com/binhdt101/network_eth_poa.git
 
 cd /app/ethereum/network_eth_poa/
-chmod +x init_network.sh && ./init_network.sh
+chmod +x *.sh 
+./init_network.sh
