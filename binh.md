@@ -23,3 +23,10 @@ eth.getBlock
 eth.getBlockTransactionCount
 eth.getTransactionFromBlock and
 eth.getUncle
+
+
+cliquer:
++ ffbcd481c1330e180879b4d2b9b50642eea43c02
++ 2e5b167f68f04918d75f5a6f577a6ea6320225c0
++ 8f406623e619be85e02b8bb6e4f4ed5c24816e6d
++ 10fff1170de86262d2f65cb81436e40f6c579b44
