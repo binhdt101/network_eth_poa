@@ -41,4 +41,4 @@ nohup geth \
 --etherbase $ACCOUNT \
 --unlock $ACCOUNT \
 --nat none \
---password passfile  &
+--password passfile  2> geth.log &
