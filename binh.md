@@ -6,6 +6,8 @@ admin.nodeInfo
 admin.datadir
 admin.peers
 
+miner.stop()
+
 2. Check compiler
 admin.setSolc("path/to/solc")
 
@@ -49,3 +51,13 @@ chmod +x *.sh
 ./run.sh
 
 ###### Check info #########
+
+
+
+###### Setup monitoring tool ######
+
+vi app/app.js
+vi package.json
+npm start
+iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+iptables -A INPUT -p tcp --dport 9001 -j ACCEPT
