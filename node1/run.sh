@@ -1,17 +1,16 @@
-#geth \
-#/Users/nguyenthanhbinh/Blockchain/test/ethereum/golang/src/vnpay/build/bin/geth
-/Users/nguyenthanhbinh/Blockchain/test/ethereum/golang/src/github.com/ethereum/go-ethereum/build/bin/geth \
---port 30302 --rpcport 8502 \
+geth \
+--port 30301 --rpcport 8501 \
 --syncmode full --datadir datadir \
---ws --wsaddr 0.0.0.0 --wsport 8546 --wsorigins="*" \
+--ws --wsaddr 0.0.0.0 --wsport 8541 --wsorigins="*" \
 --rpc --rpcaddr localhost   \
 --rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
 --networkid 1111 --gasprice 1000   --targetgaslimit '900000000000000000' \
 --rpccorsdomain "http://localhost:8000" \
---ipcdisable --mine --minerthreads=1  \
---etherbase=0xeb80964e1567064ba810b45300fd2ce3193d1684 \
---unlock 0xeb80964e1567064ba810b45300fd2ce3193d1684 \
---nat=none \
+--ipcdisable \
+--mine --minerthreads=30  \
+--etherbase=0xffbcd481c1330e180879b4d2b9b50642eea43c02 \
+--unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 \
+--nat none \
 --password passfile console
 # --verbosity=6  \
 # --nodiscover \
