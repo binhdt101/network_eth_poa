@@ -30,3 +30,11 @@ cliquer:
 + 2e5b167f68f04918d75f5a6f577a6ea6320225c0
 + 8f406623e619be85e02b8bb6e4f4ed5c24816e6d
 + 10fff1170de86262d2f65cb81436e40f6c579b44
+
+
+######  Setup ###########
+cd /app/ethereum/
+git clone https://github.com/binhdt101/network_eth_poa.git
+
+cd /app/ethereum/network_eth_poa/node1
+geth init ../genesis.json --datadir=datadir
