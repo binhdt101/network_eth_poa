@@ -8,4 +8,5 @@ case "$HOSTNAME" in
     "block-chain5")   NODENAME="node4"
     ;;
 esac
-geth init genesis.json --datadir=$NODENAME/datadir
+#geth init genesis.json --datadir=$NODENAME/datadir
+geth init test.json --datadir=$NODENAME/datadir
