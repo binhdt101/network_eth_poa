@@ -127,4 +127,20 @@ clique.getSigners()
   clique.propose("0x2e5b167f68f04918d75f5a6f577a6ea6320225c0", false)
   clique.propose("0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d", false)
 
-  
+geth --port 30301 --rpcport 8501 --syncmode full --datadir node1/datadir --ws --wsaddr 0.0.0.0 --wsport 8541 --wsorigins '*' --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain '*' --unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --etherbase 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --nat none --password passfile console
+
+
+geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins '*' --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile console
+
+
+
+admin.addPeer("enode://7939738f7643190ab4f7e6595644f178cf241581edf49f9a7a8c33f73cd1111e3553aa73bd782af06eb0d8faa85d7ccf3faab4403d4fbe66443e365be71843ab@103.126.156.18:30302")
+
+admin.addPeer("enode://7210bc4f19b8ae7b4c5803132ead1ea065fef0021956016c9bd940ddf01112ac409b677076111f05f5c979ae156c5c558d72d944072842c35b1e1deff24b72bd@103.126.156.13:30303")
+
+enode://7210bc4f19b8ae7b4c5803132ead1ea065fef0021956016c9bd940ddf01112ac409b677076111f05f5c979ae156c5c558d72d944072842c35b1e1deff24b72bd@103.126.156.13:30303
+
+
+clique.getSigners()
+
+clique.propose("0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d", true)

@@ -29,8 +29,7 @@ case "$HOSTNAME" in
         ACCOUNT="0x10fff1170de86262d2f65cb81436e40f6c579b44"
     ;;
 esac
-# nohup
-geth \
+nohup geth \
 --port $P2PPORT --rpcport $RPCPORT \
 --syncmode full --datadir $NODENAME/datadir \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins="*" \
@@ -38,8 +37,10 @@ geth \
 --rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
 --networkid 1112 --gasprice 1000   --targetgaslimit '900000000000000000' \
 --rpccorsdomain "*" \
+--mine  \
+--minerthreads 30  \
 --unlock "$ACCOUNT" \
 --etherbase "$ACCOUNT" \
 --nat none \
---password passfile  console
-# 2> geth.log &
+--password passfile  \
+2> geth.log &

@@ -9,4 +9,5 @@ case "$HOSTNAME" in
     ;;
 esac
 #geth init genesis.json --datadir=$NODENAME/datadir
+rm -rf $NODENAME/datadir/geth/
 geth init test.json --datadir=$NODENAME/datadir
