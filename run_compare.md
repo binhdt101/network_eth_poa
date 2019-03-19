@@ -1,0 +1,9 @@
+geth --port 30301 --rpcport 8501 --syncmode full --datadir node1/datadir --ws --wsaddr 0.0.0.0 --wsport 8541 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1111 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --etherbase 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --nat none --password passfile console
+root     14337 11033  0 15:36 pts/2    00:00:00 grep --color=auto geth
+
+geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1111 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile console
+
+
+ geth --port 30303 --rpcport 8503 --syncmode full --datadir node3/datadir --ws --wsaddr 0.0.0.0 --wsport 8543 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1111 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d --etherbase 0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d --nat none --password passfile console
+
+  geth --port 30304 --rpcport 8504 --syncmode full --datadir node4/datadir --ws --wsaddr 0.0.0.0 --wsport 8544 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug --networkid 1111 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x10fff1170de86262d2f65cb81436e40f6c579b44 --etherbase 0x10fff1170de86262d2f65cb81436e40f6c579b44 --nat none --password passfile console
