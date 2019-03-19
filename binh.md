@@ -61,3 +61,31 @@ vi package.json
 npm start
 iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
 iptables -A INPUT -p tcp --dport 9001 -j ACCEPT
+
+
+
+######## Account/coinbase ######
+node1:
+ + Account:
+       "0xffbcd481c1330e180879b4d2b9b50642eea43c02",
+        "0xa17a7a153c8d873a1df803c74e0664c13726f5e8",
+        "0xfb3b16996805aac961bf2e9e911d1ee2e63f61b6",
+        "0xd60a4e71e92c315f62a8aa3b5f1e0bb38e339c20",
+        "0xbea868edea1c167aab5a0eef99496e2a690f3fae",
+        "0x0e18db9aeea79d71b4c91c8375f1ef7fd0aaa594"
+
+ + coinbase:  0xd9ee4d08a86b430544254ff95e32aa6fcc1d3163
+
+node2:
+ + Account:  0x2e5b167f68f04918d75f5a6f577a6ea6320225c0
+ + Coinbase: 0xd9ee4d08a86b430544254ff95e32aa6fcc1d3163
+
+
+node3:
+ + Account: 0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d
+ + Coinbase: 0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d
+
+
+node4:
+ + Account: 0x10fff1170de86262d2f65cb81436e40f6c579b44
+ + Coinbase: 0xd9ee4d08a86b430544254ff95e32aa6fcc1d3163

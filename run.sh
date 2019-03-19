@@ -37,8 +37,9 @@ nohup geth \
 --rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
 --networkid 1111 --gasprice 1000   --targetgaslimit '900000000000000000' \
 --rpccorsdomain "*" \
---mine --minerthreads=30  \
---etherbase $ACCOUNT \
---unlock $ACCOUNT \
+--mine  \
+--minerthreads 30  \
+--unlock "$ACCOUNT" \
+--etherbase "$ACCOUNT" \
 --nat none \
 --password passfile  2> geth.log &
