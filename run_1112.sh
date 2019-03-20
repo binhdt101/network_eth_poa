@@ -44,5 +44,6 @@ nohup geth \
 --nat none \
 --password passfile  \
 --nodiscover \
+--netrestrict 103.126.156.0/24,172.101.0.0/24 \
 2> geth.log &
 # --verbosity 5 \
