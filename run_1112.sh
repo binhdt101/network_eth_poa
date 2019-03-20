@@ -43,5 +43,5 @@ nohup geth \
 --etherbase "$ACCOUNT" \
 --nat none \
 --password passfile  \
---verbosity 5\
+--verbosity 5 \
 2> geth.log &
