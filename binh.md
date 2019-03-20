@@ -29,6 +29,7 @@ geth  --datadir datadir  --delete-blocks 1000000
 
 1. reverted back the blockchain into some previous block number,
 debug.setHead("0x124F80")
+debug.setHead("0x1000")
 
 2. Check transaction pools
 
@@ -143,4 +144,6 @@ enode://7210bc4f19b8ae7b4c5803132ead1ea065fef0021956016c9bd940ddf01112ac409b6770
 
 clique.getSigners()
 
-clique.propose("0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d", true)
+clique.propose("0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d", false)
+clique.propose("0x2e5b167f68f04918d75f5a6f577a6ea6320225c0", false)
+clique.proposals
