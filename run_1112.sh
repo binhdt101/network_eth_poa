@@ -44,5 +44,5 @@ nohup geth \
 --nat none \
 --password passfile  \
 --nodiscover \
---verbosity 5 \
 2> geth.log &
+# --verbosity 5 \
