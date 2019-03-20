@@ -29,7 +29,7 @@ case "$HOSTNAME" in
         ACCOUNT="0x10fff1170de86262d2f65cb81436e40f6c579b44"
     ;;
 esac
-nohup geth \
+nohup ./bin/geth \
 --port $P2PPORT --rpcport $RPCPORT \
 --syncmode full --datadir $NODENAME/datadir \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins="*" \

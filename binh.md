@@ -147,3 +147,7 @@ clique.getSigners()
 clique.propose("0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d", false)
 clique.propose("0x2e5b167f68f04918d75f5a6f577a6ea6320225c0", false)
 clique.proposals
+
+
+eth.syncing
+eth.blockNumber
