@@ -1,0 +1,4 @@
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: listen tcp :30302: bind: address already in use
+Fatal: Error starting protocol stack: listen tcp :30302: bind: address already in use
+Fatal: Error starting protocol stack: datadir already used by another process

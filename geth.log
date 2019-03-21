@@ -1,0 +1,28 @@
+nohup: appending output to 'nohup.out'
+INFO [03-21|16:18:43.397] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-21|16:18:43.398] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+INFO [03-21|16:18:43.398] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-21|16:18:43.547] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
+INFO [03-21|16:18:43.547] Initialising Ethereum protocol           versions="[63 62]" network=1112
+WARN [03-21|16:18:43.663] Head state missing, repairing chain      number=228 hash=816194…efd866
+INFO [03-21|16:18:43.671] Rewound blockchain to past state         number=13  hash=ff941f…e773be
+INFO [03-21|16:18:43.671] Loaded most recent local header          number=228 hash=816194…efd866 td=457 age=35m36s
+INFO [03-21|16:18:43.671] Loaded most recent local full block      number=13  hash=ff941f…e773be td=27  age=53m31s
+INFO [03-21|16:18:43.671] Loaded most recent local fast block      number=228 hash=816194…efd866 td=457 age=35m36s
+INFO [03-21|16:18:43.671] Setting new local account                address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
+INFO [03-21|16:18:43.672] Loaded local transaction journal         transactions=3 dropped=0
+INFO [03-21|16:18:43.672] Regenerated local transaction journal    transactions=3 accounts=1
+INFO [03-21|16:18:43.842] New local node record                    seq=2 id=6044b2d1992cf47c ip=127.0.0.1 udp=0 tcp=30302
+INFO [03-21|16:18:43.842] Started P2P networking                   self="enode://6621b8891c5635b0cc57c2c96c7109ac91c93b1f08eb0610db6f6905c4515d59062d56a17f6955b4ba44126bc3a361cbc68ae0660816e4f8c5f5d12b18b3576c@127.0.0.1:30302?discport=0"
+INFO [03-21|16:18:43.844] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node2/datadir/geth.ipc
+INFO [03-21|16:18:43.845] HTTP endpoint opened                     url=http://0.0.0.0:8502                                  cors=* vhosts=localhost
+INFO [03-21|16:18:43.846] WebSocket endpoint opened                url=ws://[::]:8542
+INFO [03-21|16:18:44.778] Unlocked account                         address=0x2E5B167f68f04918d75F5a6f577A6eA6320225C0
+INFO [03-21|16:18:44.778] Transaction pool price threshold updated price=1000
+INFO [03-21|16:18:44.778] Transaction pool price threshold updated price=1000
+INFO [03-21|16:18:44.779] Commit new mining work                   number=14  sealhash=bfc648…2b5768 uncles=0 txs=0 gas=0 fees=0 elapsed=118.163µs
+INFO [03-21|16:18:44.780] Successfully sealed new block            number=14  sealhash=bfc648…2b5768 hash=375aaa…4967aa elapsed=1.616ms
+INFO [03-21|16:18:44.780] 🔨 mined potential block                  number=14  hash=375aaa…4967aa
+INFO [03-21|16:18:44.782] Commit new mining work                   number=15  sealhash=a71155…62cb2a uncles=0 txs=0 gas=0 fees=0 elapsed=1.102ms
+INFO [03-21|16:18:44.782] Signed recently, must wait for others 
+INFO [03-21|17:18:43.673] Regenerated local transaction journal    transactions=3 accounts=1
