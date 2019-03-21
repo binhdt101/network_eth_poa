@@ -34,7 +34,7 @@ nohup ./bin/geth \
 --syncmode full --datadir $NODENAME/datadir \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins="*" \
 --rpc --rpcaddr 0.0.0.0   \
---rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
+--rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug,admin' \
 --networkid 1112 --gasprice 1000   --targetgaslimit '900000000000000000' \
 --rpccorsdomain "*" \
 --mine  \
