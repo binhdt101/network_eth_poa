@@ -1,0 +1,621 @@
+INFO [03-18|15:10:30.385] Maximum peer count                       ETH=25 LES=0 total=25
+WARN [03-18|15:10:30.386] Found deprecated node list file /app/ethereum/network_eth_poa/node1/datadir/geth/static-nodes.json, please use the TOML config file instead. 
+INFO [03-18|15:10:30.386] Starting peer-to-peer node               instance=Geth/v1.8.21-stable-9dc5d1a9/linux-amd64/go1.10.4
+INFO [03-18|15:10:30.386] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-18|15:10:30.559] Initialised chain configuration          config="{ChainID: 1111 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5 Engine: clique}"
+INFO [03-18|15:10:30.559] Initialising Ethereum protocol           versions="[63 62]" network=1111
+INFO [03-18|15:10:30.679] Loaded most recent local header          number=292 hash=af6327…ecfa71 td=363 age=7m26s
+INFO [03-18|15:10:30.679] Loaded most recent local full block      number=292 hash=af6327…ecfa71 td=363 age=7m26s
+INFO [03-18|15:10:30.679] Loaded most recent local fast block      number=292 hash=af6327…ecfa71 td=363 age=7m26s
+INFO [03-18|15:10:30.679] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-18|15:10:30.679] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-18|15:10:30.877] New local node record                    seq=48 id=f5b2667d1f290de2 ip=127.0.0.1 udp=30301 tcp=30301
+INFO [03-18|15:10:30.877] Started P2P networking                   self=enode://e74549084a22740f5de035d1c3669cfde7b06666d4e648954f5a128b53ce99f6c23b0deff7fa754b2041d0bd3a5234e9baec9948290a28b5191ee093cba58676@127.0.0.1:30301
+WARN [03-18|15:10:30.878] Removing static dial candidate           id=0x9b2890         addr=172.101.0.17:30301 err="is self"
+INFO [03-18|15:10:30.880] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
+INFO [03-18|15:10:30.881] HTTP endpoint opened                     url=http://0.0.0.0:8501                                  cors=* vhosts=localhost
+INFO [03-18|15:10:30.881] WebSocket endpoint opened                url=ws://[::]:8541
+INFO [03-18|15:10:31.822] Unlocked account                         address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
+INFO [03-18|15:10:31.822] Transaction pool price threshold updated price=1000
+INFO [03-18|15:10:31.822] Transaction pool price threshold updated price=1000
+INFO [03-18|15:10:31.823] Commit new mining work                   number=293 sealhash=60eb95…f44104 uncles=0 txs=0 gas=0 fees=0 elapsed=213.897µs
+INFO [03-18|15:10:31.823] Signed recently, must wait for others 
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.8.21-stable-9dc5d1a9/linux-amd64/go1.10.4
+coinbase: 0xffbcd481c1330e180879b4d2b9b50642eea43c02
+at block: 292 (Mon, 18 Mar 2019 15:03:04 +07)
+ datadir: /app/ethereum/network_eth_poa/node1/datadir
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> 
+INFO [03-18|15:10:31.920] WebSocket endpoint closed                url=ws://0.0.0.0:8541
+INFO [03-18|15:10:31.920] HTTP endpoint closed                     url=http://0.0.0.0:8501
+INFO [03-18|15:10:31.920] IPC endpoint closed                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
+INFO [03-18|15:10:31.920] Writing cached state to disk             block=292 hash=af6327…ecfa71 root=530546…78e38a
+INFO [03-18|15:10:31.920] Persisted trie from memory database      nodes=0 size=0.00B time=4.281µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-18|15:10:31.920] Writing cached state to disk             block=291 hash=f61613…cc9139 root=530546…78e38a
+INFO [03-18|15:10:31.920] Persisted trie from memory database      nodes=0 size=0.00B time=1.315µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-18|15:10:31.920] Writing cached state to disk             block=165 hash=89c911…458281 root=530546…78e38a
+INFO [03-18|15:10:31.920] Persisted trie from memory database      nodes=0 size=0.00B time=1.414µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-18|15:10:31.920] Blockchain manager stopped 
+INFO [03-18|15:10:31.920] Stopping Ethereum protocol 
+INFO [03-18|15:10:31.921] Ethereum protocol stopped 
+INFO [03-18|15:10:31.921] Transaction pool stopped 
+INFO [03-18|15:10:31.921] Database closed                          database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata
+INFO [03-18|15:14:53.322] Maximum peer count                       ETH=25 LES=0 total=25
+WARN [03-18|15:14:53.323] Found deprecated node list file /app/ethereum/network_eth_poa/node1/datadir/geth/static-nodes.json, please use the TOML config file instead. 
+INFO [03-18|15:14:53.324] Starting peer-to-peer node               instance=Geth/v1.8.21-stable-9dc5d1a9/linux-amd64/go1.10.4
+INFO [03-18|15:14:53.324] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-18|15:14:53.476] Initialised chain configuration          config="{ChainID: 1111 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5 Engine: clique}"
+INFO [03-18|15:14:53.476] Initialising Ethereum protocol           versions="[63 62]" network=1111
+INFO [03-18|15:14:53.594] Loaded most recent local header          number=292 hash=af6327…ecfa71 td=363 age=11m49s
+INFO [03-18|15:14:53.594] Loaded most recent local full block      number=292 hash=af6327…ecfa71 td=363 age=11m49s
+INFO [03-18|15:14:53.594] Loaded most recent local fast block      number=292 hash=af6327…ecfa71 td=363 age=11m49s
+INFO [03-18|15:14:53.595] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-18|15:14:53.595] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-18|15:14:53.731] New local node record                    seq=49 id=f5b2667d1f290de2 ip=127.0.0.1 udp=30301 tcp=30301
+INFO [03-18|15:14:53.732] Started P2P networking                   self=enode://e74549084a22740f5de035d1c3669cfde7b06666d4e648954f5a128b53ce99f6c23b0deff7fa754b2041d0bd3a5234e9baec9948290a28b5191ee093cba58676@127.0.0.1:30301
+WARN [03-18|15:14:53.733] Removing static dial candidate           id=0x9b2890         addr=172.101.0.17:30301 err="is self"
+INFO [03-18|15:14:53.735] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
+INFO [03-18|15:14:53.736] HTTP endpoint opened                     url=http://0.0.0.0:8501                                  cors=* vhosts=localhost
+INFO [03-18|15:14:53.736] WebSocket endpoint opened                url=ws://[::]:8541
+INFO [03-18|15:14:54.675] Unlocked account                         address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
+INFO [03-18|15:14:54.675] Transaction pool price threshold updated price=1000
+INFO [03-18|15:14:54.675] Transaction pool price threshold updated price=1000
+INFO [03-18|15:14:54.675] Commit new mining work                   number=293 sealhash=fd29d7…dd2811 uncles=0 txs=0 gas=0 fees=0 elapsed=108.405µs
+INFO [03-18|15:14:54.675] Signed recently, must wait for others 
+INFO [03-18|15:15:13.448] New local node record                    seq=50 id=f5b2667d1f290de2 ip=103.126.156.17 udp=30301 tcp=30301
+INFO [03-18|15:17:34.577] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=697.352µs mgasps=0.000 number=293 hash=75b27f…b3e429 cache=0.00B
+INFO [03-18|15:17:34.577] Commit new mining work                   number=294 sealhash=b3f090…cfd9f2 uncles=0 txs=0 gas=0 fees=0 elapsed=331.876µs
+INFO [03-18|15:17:34.577] Signed recently, must wait for others 
+INFO [03-18|15:18:52.029] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=583.06µs  mgasps=0.000 number=294 hash=433cec…95581c cache=0.00B
+INFO [03-18|15:18:52.029] Commit new mining work                   number=295 sealhash=a6dd80…f86294 uncles=0 txs=0 gas=0 fees=0 elapsed=284.809µs
+INFO [03-18|15:18:53.001] Successfully sealed new block            number=295 sealhash=a6dd80…f86294 hash=55a35a…3c57be elapsed=971.561ms
+INFO [03-18|15:18:53.001] 🔨 mined potential block                  number=295 hash=55a35a…3c57be
+INFO [03-18|15:18:53.002] Commit new mining work                   number=296 sealhash=e0ee87…bac23b uncles=0 txs=0 gas=0 fees=0 elapsed=1.104ms
+INFO [03-18|15:18:53.002] Signed recently, must wait for others 
+INFO [03-18|15:18:54.851] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=682.03µs  mgasps=0.000 number=296 hash=835d25…9e53df cache=0.00B
+INFO [03-18|15:18:54.851] Commit new mining work                   number=297 sealhash=96598f…12f015 uncles=0 txs=0 gas=0 fees=0 elapsed=281.605µs
+INFO [03-18|15:18:54.852] Signed recently, must wait for others 
+INFO [03-18|15:18:55.687] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=694.048µs mgasps=0.000 number=297 hash=e1c2e4…dd8d9a cache=0.00B
+INFO [03-18|15:18:55.687] Commit new mining work                   number=298 sealhash=679279…2f3a71 uncles=0 txs=0 gas=0 fees=0 elapsed=429.548µs
+INFO [03-18|15:18:57.302] Successfully sealed new block            number=298 sealhash=679279…2f3a71 hash=2c6b40…7418cc elapsed=1.614s
+INFO [03-18|15:18:57.302] 🔨 mined potential block                  number=298 hash=2c6b40…7418cc
+INFO [03-18|15:18:57.303] Commit new mining work                   number=299 sealhash=bd0e07…984de8 uncles=0 txs=0 gas=0 fees=0 elapsed=1.013ms
+INFO [03-18|15:18:57.303] Signed recently, must wait for others 
+INFO [03-18|15:18:58.254] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=683.142µs mgasps=0.000 number=299 hash=ec1d2f…d17608 cache=0.00B
+INFO [03-18|15:18:58.254] Commit new mining work                   number=300 sealhash=d67b68…8a7063 uncles=0 txs=0 gas=0 fees=0 elapsed=272.298µs
+INFO [03-18|15:18:58.254] Signed recently, must wait for others 
+INFO [03-18|15:18:58.914] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=567.362µs mgasps=0.000 number=300 hash=4c6f54…02d0ad cache=0.00B
+INFO [03-18|15:18:58.914] Commit new mining work                   number=301 sealhash=3680bd…3e9cb1 uncles=0 txs=0 gas=0 fees=0 elapsed=268.346µs
+INFO [03-18|15:18:59.250] Successfully sealed new block            number=301 sealhash=3680bd…3e9cb1 hash=b4b774…3bfe6a elapsed=335.466ms
+INFO [03-18|15:18:59.250] 🔨 mined potential block                  number=301 hash=b4b774…3bfe6a
+INFO [03-18|15:18:59.251] Commit new mining work                   number=302 sealhash=7f79bf…75aecf uncles=0 txs=0 gas=0 fees=0 elapsed=1.137ms
+INFO [03-18|15:18:59.251] Signed recently, must wait for others 
+INFO [03-18|15:19:00.449] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=602.48µs  mgasps=0.000 number=302 hash=cf9b63…8b4fcb cache=0.00B
+INFO [03-18|15:19:00.449] 🔗 block reached canonical chain          number=295 hash=55a35a…3c57be
+INFO [03-18|15:19:00.449] Commit new mining work                   number=303 sealhash=fb4807…436f0a uncles=0 txs=0 gas=0 fees=0 elapsed=370.933µs
+INFO [03-18|15:19:00.450] Signed recently, must wait for others 
+INFO [03-18|15:19:01.542] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=665.55µs  mgasps=0.000 number=303 hash=d03cb2…12324c cache=0.00B
+INFO [03-18|15:19:01.543] Commit new mining work                   number=304 sealhash=686951…14c05d uncles=0 txs=0 gas=0 fees=0 elapsed=281.505µs
+INFO [03-18|15:19:02.389] Successfully sealed new block            number=304 sealhash=686951…14c05d hash=a29851…6fc120 elapsed=846.268ms
+INFO [03-18|15:19:02.389] 🔨 mined potential block                  number=304 hash=a29851…6fc120
+INFO [03-18|15:19:02.390] Commit new mining work                   number=305 sealhash=5f03a0…61dd95 uncles=0 txs=0 gas=0 fees=0 elapsed=1.063ms
+INFO [03-18|15:19:02.391] Signed recently, must wait for others 
+INFO [03-18|15:19:03.596] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.469ms   mgasps=0.000 number=305 hash=9494a1…425acd cache=0.00B
+INFO [03-18|15:19:03.597] 🔗 block reached canonical chain          number=298 hash=2c6b40…7418cc
+INFO [03-18|15:19:03.597] Commit new mining work                   number=306 sealhash=a64c8f…0cc0ff uncles=0 txs=0 gas=0 fees=0 elapsed=365.176µs
+INFO [03-18|15:19:03.597] Signed recently, must wait for others 
+INFO [03-18|15:19:05.820] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=709.572µs mgasps=0.000 number=306 hash=d09e5f…a99211 cache=0.00B
+INFO [03-18|15:19:05.821] Commit new mining work                   number=307 sealhash=c2ddc4…b88e70 uncles=0 txs=0 gas=0 fees=0 elapsed=299.236µs
+INFO [03-18|15:19:06.001] Successfully sealed new block            number=307 sealhash=c2ddc4…b88e70 hash=a66b86…a19567 elapsed=180.293ms
+INFO [03-18|15:19:06.001] 🔨 mined potential block                  number=307 hash=a66b86…a19567
+INFO [03-18|15:19:06.002] Commit new mining work                   number=308 sealhash=e02a43…f0a812 uncles=0 txs=0 gas=0 fees=0 elapsed=1.076ms
+INFO [03-18|15:19:06.002] Signed recently, must wait for others 
+INFO [03-18|15:19:07.933] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=594.349µs mgasps=0.000 number=308 hash=f97c7e…525ac3 cache=0.00B
+INFO [03-18|15:19:07.933] 🔗 block reached canonical chain          number=301 hash=b4b774…3bfe6a
+INFO [03-18|15:19:07.933] Commit new mining work                   number=309 sealhash=0dcfa1…3a379b uncles=0 txs=0 gas=0 fees=0 elapsed=372.711µs
+INFO [03-18|15:19:07.934] Signed recently, must wait for others 
+INFO [03-18|15:19:09.328] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=654.148µs mgasps=0.000 number=309 hash=420ee3…936c09 cache=0.00B
+INFO [03-18|15:19:09.328] Commit new mining work                   number=310 sealhash=fe3116…f1e25e uncles=0 txs=0 gas=0 fees=0 elapsed=273.793µs
+INFO [03-18|15:19:09.330] Successfully sealed new block            number=310 sealhash=fe3116…f1e25e hash=5b2075…cd506b elapsed=1.341ms
+INFO [03-18|15:19:09.330] 🔨 mined potential block                  number=310 hash=5b2075…cd506b
+INFO [03-18|15:19:09.331] Commit new mining work                   number=311 sealhash=3c9d87…ad8095 uncles=0 txs=0 gas=0 fees=0 elapsed=1.089ms
+INFO [03-18|15:19:09.331] Signed recently, must wait for others 
+INFO [03-18|15:19:11.399] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=601.849µs mgasps=0.000 number=311 hash=186559…18e24a cache=0.00B
+INFO [03-18|15:19:11.400] 🔗 block reached canonical chain          number=304 hash=a29851…6fc120
+INFO [03-18|15:19:11.400] Commit new mining work                   number=312 sealhash=7b081e…2f1214 uncles=0 txs=0 gas=0 fees=0 elapsed=447.484µs
+INFO [03-18|15:19:11.400] Signed recently, must wait for others 
+INFO [03-18|15:19:11.403] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=644.666µs mgasps=0.000 number=312 hash=16c22e…bb02b7 cache=0.00B
+INFO [03-18|15:19:11.404] Commit new mining work                   number=313 sealhash=7e527b…a2fc35 uncles=0 txs=0 gas=0 fees=0 elapsed=263.368µs
+INFO [03-18|15:19:13.205] Successfully sealed new block            number=313 sealhash=7e527b…a2fc35 hash=b70389…b01532 elapsed=1.801s
+INFO [03-18|15:19:13.205] 🔨 mined potential block                  number=313 hash=b70389…b01532
+INFO [03-18|15:19:13.206] Commit new mining work                   number=314 sealhash=2763e7…6b6d6c uncles=0 txs=0 gas=0 fees=0 elapsed=1.057ms
+INFO [03-18|15:19:13.206] Signed recently, must wait for others 
+INFO [03-18|15:19:13.522] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=579.27µs  mgasps=0.000 number=314 hash=2f44e1…f0ef8a cache=0.00B
+INFO [03-18|15:19:13.523] 🔗 block reached canonical chain          number=307 hash=a66b86…a19567
+INFO [03-18|15:19:13.523] Commit new mining work                   number=315 sealhash=cb94e9…2b19a6 uncles=0 txs=0 gas=0 fees=0 elapsed=469.282µs
+INFO [03-18|15:19:13.523] Signed recently, must wait for others 
+INFO [03-18|15:19:14.480] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=849.594µs mgasps=0.000 number=315 hash=055fd7…6b8069 cache=0.00B
+INFO [03-18|15:19:14.480] Commit new mining work                   number=316 sealhash=c9fa19…6bd1a3 uncles=0 txs=0 gas=0 fees=0 elapsed=302.21µs
+INFO [03-18|15:19:15.580] Successfully sealed new block            number=316 sealhash=c9fa19…6bd1a3 hash=2b3ec9…59bde9 elapsed=1.099s
+INFO [03-18|15:19:15.580] 🔨 mined potential block                  number=316 hash=2b3ec9…59bde9
+INFO [03-18|15:19:15.581] Commit new mining work                   number=317 sealhash=6457c0…c769e7 uncles=0 txs=0 gas=0 fees=0 elapsed=1.206ms
+INFO [03-18|15:19:15.581] Signed recently, must wait for others 
+INFO [03-18|15:19:16.801] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=645.483µs mgasps=0.000 number=317 hash=3a2386…e2b725 cache=0.00B
+INFO [03-18|15:19:16.801] 🔗 block reached canonical chain          number=310 hash=5b2075…cd506b
+INFO [03-18|15:19:16.801] Signed recently, must wait for others 
+INFO [03-18|15:19:16.801] Commit new mining work                   number=318 sealhash=a1d4e1…11090c uncles=0 txs=0 gas=0 fees=0 elapsed=477.48µs
+INFO [03-18|15:19:17.546] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=603.174µs mgasps=0.000 number=318 hash=73c8c3…d7b9a5 cache=0.00B
+INFO [03-18|15:19:17.546] Commit new mining work                   number=319 sealhash=fdfc3d…174028 uncles=0 txs=0 gas=0 fees=0 elapsed=269.058µs
+INFO [03-18|15:19:18.001] Successfully sealed new block            number=319 sealhash=fdfc3d…174028 hash=91096d…29418a elapsed=454.434ms
+INFO [03-18|15:19:18.001] 🔨 mined potential block                  number=319 hash=91096d…29418a
+INFO [03-18|15:19:18.002] Commit new mining work                   number=320 sealhash=c427f4…8b3a3a uncles=0 txs=0 gas=0 fees=0 elapsed=1.030ms
+INFO [03-18|15:19:18.002] Signed recently, must wait for others 
+INFO [03-18|15:19:18.596] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.389ms   mgasps=0.000 number=317 hash=0f2888…7ff6be cache=0.00B
+INFO [03-18|15:19:18.596] Commit new mining work                   number=320 sealhash=c427f4…8b3a3a uncles=1 txs=0 gas=0 fees=0 elapsed=111.764µs
+INFO [03-18|15:19:20.197] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=591.029µs mgasps=0.000 number=320 hash=f472af…df304b cache=0.00B
+INFO [03-18|15:19:20.198] 🔗 block reached canonical chain          number=313 hash=b70389…b01532
+INFO [03-18|15:19:20.198] Commit new mining work                   number=321 sealhash=c75951…8b7249 uncles=1 txs=0 gas=0 fees=0 elapsed=413.031µs
+INFO [03-18|15:19:20.198] Signed recently, must wait for others 
+INFO [03-18|15:19:20.207] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=530.871µs mgasps=0.000 number=321 hash=ffc921…fbf9fb cache=0.00B
+INFO [03-18|15:19:20.207] Commit new mining work                   number=322 sealhash=4253cd…4cb7cc uncles=1 txs=0 gas=0 fees=0 elapsed=347.684µs
+INFO [03-18|15:19:21.829] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=597.124µs mgasps=0.000 number=322 hash=13e7ce…bd6505 cache=0.00B
+INFO [03-18|15:19:21.829] Commit new mining work                   number=323 sealhash=6022a4…ba055a uncles=1 txs=0 gas=0 fees=0 elapsed=387.743µs
+INFO [03-18|15:19:22.001] Successfully sealed new block            number=323 sealhash=6022a4…ba055a hash=c7befc…41686c elapsed=171.657ms
+INFO [03-18|15:19:22.001] 🔗 block reached canonical chain          number=316 hash=2b3ec9…59bde9
+INFO [03-18|15:19:22.001] 🔨 mined potential block                  number=323 hash=c7befc…41686c
+INFO [03-18|15:19:22.002] Commit new mining work                   number=324 sealhash=67b0d1…e1601b uncles=0 txs=0 gas=0 fees=0 elapsed=1.190ms
+INFO [03-18|15:19:22.002] Signed recently, must wait for others 
+INFO [03-18|15:19:23.846] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=593.331µs mgasps=0.000 number=324 hash=9e434a…f216f2 cache=0.00B
+INFO [03-18|15:19:23.846] Commit new mining work                   number=325 sealhash=06a329…5a389e uncles=0 txs=0 gas=0 fees=0 elapsed=338.053µs
+INFO [03-18|15:19:23.846] Signed recently, must wait for others 
+INFO [03-18|15:19:24.804] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=593.389µs mgasps=0.000 number=325 hash=496650…42f7a8 cache=0.00B
+INFO [03-18|15:19:24.805] Commit new mining work                   number=326 sealhash=179627…5735cb uncles=0 txs=0 gas=0 fees=0 elapsed=300.526µs
+INFO [03-18|15:19:25.003] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=604.43µs  mgasps=0.000 number=326 hash=91e10b…88b3bf cache=0.00B
+INFO [03-18|15:19:25.004] 🔗 block reached canonical chain          number=319 hash=91096d…29418a
+INFO [03-18|15:19:25.004] Commit new mining work                   number=327 sealhash=05f98c…d30b09 uncles=0 txs=0 gas=0 fees=0 elapsed=337.056µs
+INFO [03-18|15:19:26.001] Successfully sealed new block            number=327 sealhash=05f98c…d30b09 hash=81bc64…8eafc8 elapsed=997.351ms
+INFO [03-18|15:19:26.001] 🔨 mined potential block                  number=327 hash=81bc64…8eafc8
+INFO [03-18|15:19:26.002] Commit new mining work                   number=328 sealhash=134b1f…8b22fe uncles=0 txs=0 gas=0 fees=0 elapsed=1.222ms
+INFO [03-18|15:19:26.003] Signed recently, must wait for others 
+INFO [03-18|15:19:27.008] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.647ms   mgasps=0.000 number=328 hash=fb6ddf…247fc2 cache=0.00B
+INFO [03-18|15:19:27.009] Commit new mining work                   number=329 sealhash=6303b1…0e798d uncles=0 txs=0 gas=0 fees=0 elapsed=343.591µs
+INFO [03-18|15:19:27.009] Signed recently, must wait for others 
+INFO [03-18|15:19:28.057] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=616.006µs mgasps=0.000 number=329 hash=695bb0…046f18 cache=0.00B
+INFO [03-18|15:19:28.057] Commit new mining work                   number=330 sealhash=9a6425…d6f66b uncles=0 txs=0 gas=0 fees=0 elapsed=314.792µs
+INFO [03-18|15:19:28.596] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.471ms   mgasps=0.000 number=329 hash=c60fd0…201320 cache=0.00B
+INFO [03-18|15:19:28.597] Commit new mining work                   number=330 sealhash=d5deb3…9e062b uncles=1 txs=0 gas=0 fees=0 elapsed=356.834µs
+INFO [03-18|15:19:30.230] Successfully sealed new block            number=330 sealhash=d5deb3…9e062b hash=7c9c5d…87148b elapsed=1.633s
+INFO [03-18|15:19:30.230] 🔗 block reached canonical chain          number=323 hash=c7befc…41686c
+INFO [03-18|15:19:30.230] 🔨 mined potential block                  number=330 hash=7c9c5d…87148b
+INFO [03-18|15:19:30.232] Commit new mining work                   number=331 sealhash=e45d3e…80b453 uncles=1 txs=0 gas=0 fees=0 elapsed=1.495ms
+INFO [03-18|15:19:30.232] Signed recently, must wait for others 
+INFO [03-18|15:19:30.242] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=809.538µs mgasps=0.000 number=331 hash=2f27f6…1b1da6 cache=0.00B
+INFO [03-18|15:19:30.242] Commit new mining work                   number=332 sealhash=b8542c…18449b uncles=1 txs=0 gas=0 fees=0 elapsed=338.895µs
+INFO [03-18|15:19:30.243] Signed recently, must wait for others 
+INFO [03-18|15:19:31.008] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=600.391µs mgasps=0.000 number=332 hash=663d9d…c751c4 cache=0.00B
+INFO [03-18|15:19:31.008] Commit new mining work                   number=333 sealhash=e9542a…b3196e uncles=1 txs=0 gas=0 fees=0 elapsed=281.042µs
+INFO [03-18|15:19:32.031] Successfully sealed new block            number=333 sealhash=e9542a…b3196e hash=6ac6d7…cad969 elapsed=1.023s
+INFO [03-18|15:19:32.031] 🔨 mined potential block                  number=333 hash=6ac6d7…cad969
+INFO [03-18|15:19:32.033] Commit new mining work                   number=334 sealhash=c0c21f…189ff1 uncles=1 txs=0 gas=0 fees=0 elapsed=1.087ms
+INFO [03-18|15:19:32.033] Signed recently, must wait for others 
+INFO [03-18|15:19:33.003] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=722.277µs mgasps=0.000 number=334 hash=c5aed7…b6d84d cache=0.00B
+INFO [03-18|15:19:33.004] 🔗 block reached canonical chain          number=327 hash=81bc64…8eafc8
+INFO [03-18|15:19:33.004] Commit new mining work                   number=335 sealhash=8c08bb…32e953 uncles=1 txs=0 gas=0 fees=0 elapsed=393.137µs
+INFO [03-18|15:19:33.004] Signed recently, must wait for others 
+INFO [03-18|15:19:33.596] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.304ms   mgasps=0.000 number=333 hash=564b1b…a0e6cb cache=0.00B
+INFO [03-18|15:19:33.596] Commit new mining work                   number=335 sealhash=8c08bb…32e953 uncles=2 txs=0 gas=0 fees=0 elapsed=124.635µs
+INFO [03-18|15:19:35.239] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=795.607µs mgasps=0.000 number=335 hash=d160ce…2126dd cache=0.00B
+INFO [03-18|15:19:35.239] Commit new mining work                   number=336 sealhash=82ea47…bebad6 uncles=1 txs=0 gas=0 fees=0 elapsed=390.618µs
+INFO [03-18|15:19:35.243] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=920.56µs  mgasps=0.000 number=336 hash=8c759d…3590df cache=0.00B
+INFO [03-18|15:19:35.243] Commit new mining work                   number=337 sealhash=959779…930158 uncles=1 txs=0 gas=0 fees=0 elapsed=361.884µs
+INFO [03-18|15:19:36.016] Successfully sealed new block            number=337 sealhash=959779…930158 hash=3065e7…8ea0cc elapsed=772.357ms
+INFO [03-18|15:19:36.016] 🔗 block reached canonical chain          number=330 hash=7c9c5d…87148b
+INFO [03-18|15:19:36.016] 🔨 mined potential block                  number=337 hash=3065e7…8ea0cc
+INFO [03-18|15:19:36.017] Commit new mining work                   number=338 sealhash=13ca8d…b3ebd8 uncles=1 txs=0 gas=0 fees=0 elapsed=1.060ms
+INFO [03-18|15:19:36.017] Signed recently, must wait for others 
+INFO [03-18|15:19:37.003] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=597.1µs   mgasps=0.000 number=338 hash=8cd331…dbf1c6 cache=0.00B
+INFO [03-18|15:19:37.003] Commit new mining work                   number=339 sealhash=4d7ab0…ec7aa9 uncles=1 txs=0 gas=0 fees=0 elapsed=317.949µs
+INFO [03-18|15:19:37.004] Signed recently, must wait for others 
+INFO [03-18|15:19:38.002] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=687.487µs mgasps=0.000 number=339 hash=1bb60d…36ed5a cache=0.00B
+INFO [03-18|15:19:38.002] Commit new mining work                   number=340 sealhash=b2da61…075d0d uncles=0 txs=0 gas=0 fees=0 elapsed=359.549µs
+INFO [03-18|15:19:39.341] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=696.952µs mgasps=0.000 number=339 hash=21ff9e…523f78 cache=0.00B
+INFO [03-18|15:19:39.341] Commit new mining work                   number=340 sealhash=9e3c08…1b6366 uncles=1 txs=0 gas=0 fees=0 elapsed=340.271µs
+INFO [03-18|15:19:39.636] Successfully sealed new block            number=340 sealhash=9e3c08…1b6366 hash=249447…7865a3 elapsed=294.931ms
+INFO [03-18|15:19:39.636] 🔗 block reached canonical chain          number=333 hash=6ac6d7…cad969
+INFO [03-18|15:19:39.636] 🔨 mined potential block                  number=340 hash=249447…7865a3
+INFO [03-18|15:19:39.637] Commit new mining work                   number=341 sealhash=b14caf…5974c9 uncles=1 txs=0 gas=0 fees=0 elapsed=1.083ms
+INFO [03-18|15:19:39.638] Signed recently, must wait for others 
+INFO [03-18|15:19:40.091] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=603.636µs mgasps=0.000 number=341 hash=a585d7…2c7a37 cache=0.00B
+INFO [03-18|15:19:40.091] Commit new mining work                   number=342 sealhash=0a5ab1…bb0066 uncles=1 txs=0 gas=0 fees=0 elapsed=357.786µs
+INFO [03-18|15:19:40.091] Signed recently, must wait for others 
+INFO [03-18|15:19:41.001] Block synchronisation started 
+INFO [03-18|15:19:41.002] Mining aborted due to sync 
+INFO [03-18|15:19:41.008] Imported new chain segment               blocks=2 txs=0 mgas=0.000 elapsed=2.321ms   mgasps=0.000 number=342 hash=a26902…372cee cache=0.00B
+INFO [03-18|15:19:41.009] Commit new mining work                   number=343 sealhash=6fa004…6486bd uncles=2 txs=0 gas=0 fees=0 elapsed=402.119µs
+INFO [03-18|15:19:41.009] Commit new mining work                   number=343 sealhash=6fa004…6486bd uncles=2 txs=0 gas=0 fees=0 elapsed=554.313µs
+INFO [03-18|15:19:42.001] Successfully sealed new block            number=343 sealhash=6fa004…6486bd hash=e6bf22…d84f77 elapsed=992.614ms
+INFO [03-18|15:19:42.001] 🔨 mined potential block                  number=343 hash=e6bf22…d84f77
+INFO [03-18|15:19:42.002] Commit new mining work                   number=344 sealhash=20514d…14634a uncles=2 txs=0 gas=0 fees=0 elapsed=1.117ms
+INFO [03-18|15:19:42.003] Signed recently, must wait for others 
+Fatal: Error starting protocol stack: datadir already used by another process
+Incorrect Usage. flag needs an argument: -verbosity
+
+NAME:
+   geth - the go-ethereum command line interface
+
+   Copyright 2013-2018 The go-ethereum Authors
+
+USAGE:
+   geth [options] command [command options] [arguments...]
+   
+VERSION:
+   1.8.21-stable-9dc5d1a9
+   
+COMMANDS:
+   account           Manage accounts
+   attach            Start an interactive JavaScript environment (connect to node)
+   bug               opens a window to report a bug on the geth repo
+   console           Start an interactive JavaScript environment
+   copydb            Create a local chain from a target chaindata folder
+   dump              Dump a specific block from storage
+   dumpconfig        Show configuration values
+   export            Export blockchain into file
+   export-preimages  Export the preimage database into an RLP stream
+   import            Import a blockchain file
+   import-preimages  Import the preimage database from an RLP stream
+   init              Bootstrap and initialize a new genesis block
+   js                Execute the specified JavaScript files
+   license           Display license information
+   makecache         Generate ethash verification cache (for testing)
+   makedag           Generate ethash mining DAG (for testing)
+   monitor           Monitor and visualize node metrics
+   removedb          Remove blockchain and state databases
+   version           Print version numbers
+   wallet            Manage Ethereum presale wallets
+   help, h           Shows a list of commands or help for one command
+   
+ETHEREUM OPTIONS:
+  --config value               TOML configuration file
+  --datadir "/root/.ethereum"  Data directory for the databases and keystore
+  --keystore                   Directory for the keystore (default = inside the datadir)
+  --nousb                      Disables monitoring for and managing USB hardware wallets
+  --networkid value            Network identifier (integer, 1=Frontier, 2=Morden (disused), 3=Ropsten, 4=Rinkeby) (default: 1)
+  --testnet                    Ropsten network: pre-configured proof-of-work test network
+  --rinkeby                    Rinkeby network: pre-configured proof-of-authority test network
+  --syncmode "full"            Blockchain sync mode ("fast", "full", or "light")
+  --gcmode value               Blockchain garbage collection mode ("full", "archive") (default: "full")
+  --ethstats value             Reporting URL of a ethstats service (nodename:secret@host:port)
+  --identity value             Custom node name
+  --lightserv value            Maximum percentage of time allowed for serving LES requests (0-90) (default: 0)
+  --lightpeers value           Maximum number of LES client peers (default: 100)
+  --lightkdf                   Reduce key-derivation RAM & CPU usage at some expense of KDF strength
+  --whitelist value            Comma separated block number-to-hash mappings to enforce (<number>=<hash>)
+  
+DEVELOPER CHAIN OPTIONS:
+  --dev               Ephemeral proof-of-authority network with a pre-funded developer account, mining enabled
+  --dev.period value  Block period to use in developer mode (0 = mine only if transaction pending) (default: 0)
+  
+ETHASH OPTIONS:
+  --ethash.cachedir                Directory to store the ethash verification caches (default = inside the datadir)
+  --ethash.cachesinmem value       Number of recent ethash caches to keep in memory (16MB each) (default: 2)
+  --ethash.cachesondisk value      Number of recent ethash caches to keep on disk (16MB each) (default: 3)
+  --ethash.dagdir "/root/.ethash"  Directory to store the ethash mining DAGs (default = inside home folder)
+  --ethash.dagsinmem value         Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
+  --ethash.dagsondisk value        Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
+  
+TRANSACTION POOL OPTIONS:
+  --txpool.locals value        Comma separated accounts to treat as locals (no flush, priority inclusion)
+  --txpool.nolocals            Disables price exemptions for locally submitted transactions
+  --txpool.journal value       Disk journal for local transaction to survive node restarts (default: "transactions.rlp")
+  --txpool.rejournal value     Time interval to regenerate the local transaction journal (default: 1h0m0s)
+  --txpool.pricelimit value    Minimum gas price limit to enforce for acceptance into the pool (default: 1)
+  --txpool.pricebump value     Price bump percentage to replace an already existing transaction (default: 10)
+  --txpool.accountslots value  Minimum number of executable transaction slots guaranteed per account (default: 16)
+  --txpool.globalslots value   Maximum number of executable transaction slots for all accounts (default: 4096)
+  --txpool.accountqueue value  Maximum number of non-executable transaction slots permitted per account (default: 64)
+  --txpool.globalqueue value   Maximum number of non-executable transaction slots for all accounts (default: 1024)
+  --txpool.lifetime value      Maximum amount of time non-executable transaction are queued (default: 3h0m0s)
+  
+PERFORMANCE TUNING OPTIONS:
+  --cache value            Megabytes of memory allocated to internal caching (default: 1024)
+  --cache.database value   Percentage of cache memory allowance to use for database io (default: 50)
+  --cache.trie value       Percentage of cache memory allowance to use for trie caching (default: 25)
+  --cache.gc value         Percentage of cache memory allowance to use for trie pruning (default: 25)
+  --trie-cache-gens value  Number of trie node generations to keep in memory (default: 120)
+  
+ACCOUNT OPTIONS:
+  --unlock value    Comma separated list of accounts to unlock
+  --password value  Password file to use for non-interactive password input
+  
+API AND CONSOLE OPTIONS:
+  --rpc                  Enable the HTTP-RPC server
+  --rpcaddr value        HTTP-RPC server listening interface (default: "localhost")
+  --rpcport value        HTTP-RPC server listening port (default: 8545)
+  --rpcapi value         API's offered over the HTTP-RPC interface
+  --ws                   Enable the WS-RPC server
+  --wsaddr value         WS-RPC server listening interface (default: "localhost")
+  --wsport value         WS-RPC server listening port (default: 8546)
+  --wsapi value          API's offered over the WS-RPC interface
+  --wsorigins value      Origins from which to accept websockets requests
+  --ipcdisable           Disable the IPC-RPC server
+  --ipcpath              Filename for IPC socket/pipe within the datadir (explicit paths escape it)
+  --rpccorsdomain value  Comma separated list of domains from which to accept cross origin requests (browser enforced)
+  --rpcvhosts value      Comma separated list of virtual hostnames from which to accept requests (server enforced). Accepts '*' wildcard. (default: "localhost")
+  --jspath loadScript    JavaScript root path for loadScript (default: ".")
+  --exec value           Execute JavaScript statement
+  --preload value        Comma separated list of JavaScript files to preload into the console
+  
+NETWORKING OPTIONS:
+  --bootnodes value     Comma separated enode URLs for P2P discovery bootstrap (set v4+v5 instead for light servers)
+  --bootnodesv4 value   Comma separated enode URLs for P2P v4 discovery bootstrap (light server, full nodes)
+  --bootnodesv5 value   Comma separated enode URLs for P2P v5 discovery bootstrap (light server, light nodes)
+  --port value          Network listening port (default: 30303)
+  --maxpeers value      Maximum number of network peers (network disabled if set to 0) (default: 25)
+  --maxpendpeers value  Maximum number of pending connection attempts (defaults used if set to 0) (default: 0)
+  --nat value           NAT port mapping mechanism (any|none|upnp|pmp|extip:<IP>) (default: "any")
+  --nodiscover          Disables the peer discovery mechanism (manual peer addition)
+  --v5disc              Enables the experimental RLPx V5 (Topic Discovery) mechanism
+  --netrestrict value   Restricts network communication to the given IP networks (CIDR masks)
+  --nodekey value       P2P node key file
+  --nodekeyhex value    P2P node key as hex (for testing)
+  
+MINER OPTIONS:
+  --mine                   Enable mining
+  --miner.threads value    Number of CPU threads to use for mining (default: 0)
+  --miner.notify value     Comma separated HTTP URL list to notify of new work packages
+  --miner.gasprice "1000"  Minimum gas price for mining a transaction
+  --miner.gastarget value  Target gas floor for mined blocks (default: 8000000)
+  --miner.gaslimit value   Target gas ceiling for mined blocks (default: 8000000)
+  --miner.etherbase value  Public address for block mining rewards (default = first account) (default: "0")
+  --miner.extradata value  Block extra data set by the miner (default = client version)
+  --miner.recommit value   Time interval to recreate the block being mined (default: 3s)
+  --miner.noverify         Disable remote sealing verification
+  
+GAS PRICE ORACLE OPTIONS:
+  --gpoblocks value      Number of recent blocks to check for gas prices (default: 20)
+  --gpopercentile value  Suggested gas price is the given percentile of a set of recent transaction gas prices (default: 60)
+  
+VIRTUAL MACHINE OPTIONS:
+  --vmdebug         Record information useful for VM and contract debugging
+  --vm.evm value    External EVM configuration (default = built-in interpreter)
+  --vm.ewasm value  External ewasm configuration (default = built-in interpreter)
+  
+LOGGING AND DEBUGGING OPTIONS:
+  --fakepow                 Disables proof-of-work verification
+  --nocompaction            Disables db compaction after import
+  --verbosity value         Logging verbosity: 0=silent, 1=error, 2=warn, 3=info, 4=debug, 5=detail (default: 3)
+  --vmodule value           Per-module verbosity: comma-separated list of <pattern>=<level> (e.g. eth/*=5,p2p=4)
+  --backtrace value         Request a stack trace at a specific logging statement (e.g. "block.go:271")
+  --debug                   Prepends log messages with call-site location (file and line number)
+  --pprof                   Enable the pprof HTTP server
+  --pprofaddr value         pprof HTTP server listening interface (default: "127.0.0.1")
+  --pprofport value         pprof HTTP server listening port (default: 6060)
+  --memprofilerate value    Turn on memory profiling with the given rate (default: 524288)
+  --blockprofilerate value  Turn on block profiling with the given rate (default: 0)
+  --cpuprofile value        Write CPU profile to the given file
+  --trace value             Write execution trace to the given file
+  
+METRICS AND STATS OPTIONS:
+  --metrics                          Enable metrics collection and reporting
+  --metrics.influxdb                 Enable metrics export/push to an external InfluxDB database
+  --metrics.influxdb.endpoint value  InfluxDB API endpoint to report metrics to (default: "http://localhost:8086")
+  --metrics.influxdb.database value  InfluxDB database name to push reported metrics to (default: "geth")
+  --metrics.influxdb.username value  Username to authorize access to the database (default: "test")
+  --metrics.influxdb.password value  Password to authorize access to the database (default: "test")
+  --metrics.influxdb.host.tag host   InfluxDB host tag attached to all measurements (default: "localhost")
+  
+WHISPER (EXPERIMENTAL) OPTIONS:
+  --shh                       Enable Whisper
+  --shh.maxmessagesize value  Max message size accepted (default: 1048576)
+  --shh.pow value             Minimum POW accepted (default: 0.2)
+  --shh.restrict-light        Restrict connection between two whisper light clients
+  
+DEPRECATED OPTIONS:
+  --minerthreads value    Number of CPU threads to use for mining (deprecated, use --miner.threads) (default: 0)
+  --targetgaslimit value  Target gas floor for mined blocks (deprecated, use --miner.gastarget) (default: 8000000)
+  --gasprice "1000"       Minimum gas price for mining a transaction (deprecated, use --miner.gasprice)
+  --etherbase value       Public address for block mining rewards (default = first account, deprecated, use --miner.etherbase) (default: "0")
+  --extradata value       Block extra data set by the miner (default = client version, deprecated, use --miner.extradata)
+  
+MISC OPTIONS:
+  --override.constantinople value  Manually specify constantinople fork-block, overriding the bundled setting (default: 0)
+  --help, -h                       show help
+  
+
+COPYRIGHT:
+   Copyright 2013-2018 The go-ethereum Authors
+   
+flag needs an argument: -verbosity
+Incorrect Usage. flag needs an argument: -verbosity
+
+NAME:
+   geth - the go-ethereum command line interface
+
+   Copyright 2013-2018 The go-ethereum Authors
+
+USAGE:
+   geth [options] command [command options] [arguments...]
+   
+VERSION:
+   1.8.21-stable-9dc5d1a9
+   
+COMMANDS:
+   account           Manage accounts
+   attach            Start an interactive JavaScript environment (connect to node)
+   bug               opens a window to report a bug on the geth repo
+   console           Start an interactive JavaScript environment
+   copydb            Create a local chain from a target chaindata folder
+   dump              Dump a specific block from storage
+   dumpconfig        Show configuration values
+   export            Export blockchain into file
+   export-preimages  Export the preimage database into an RLP stream
+   import            Import a blockchain file
+   import-preimages  Import the preimage database from an RLP stream
+   init              Bootstrap and initialize a new genesis block
+   js                Execute the specified JavaScript files
+   license           Display license information
+   makecache         Generate ethash verification cache (for testing)
+   makedag           Generate ethash mining DAG (for testing)
+   monitor           Monitor and visualize node metrics
+   removedb          Remove blockchain and state databases
+   version           Print version numbers
+   wallet            Manage Ethereum presale wallets
+   help, h           Shows a list of commands or help for one command
+   
+ETHEREUM OPTIONS:
+  --config value               TOML configuration file
+  --datadir "/root/.ethereum"  Data directory for the databases and keystore
+  --keystore                   Directory for the keystore (default = inside the datadir)
+  --nousb                      Disables monitoring for and managing USB hardware wallets
+  --networkid value            Network identifier (integer, 1=Frontier, 2=Morden (disused), 3=Ropsten, 4=Rinkeby) (default: 1)
+  --testnet                    Ropsten network: pre-configured proof-of-work test network
+  --rinkeby                    Rinkeby network: pre-configured proof-of-authority test network
+  --syncmode "full"            Blockchain sync mode ("fast", "full", or "light")
+  --gcmode value               Blockchain garbage collection mode ("full", "archive") (default: "full")
+  --ethstats value             Reporting URL of a ethstats service (nodename:secret@host:port)
+  --identity value             Custom node name
+  --lightserv value            Maximum percentage of time allowed for serving LES requests (0-90) (default: 0)
+  --lightpeers value           Maximum number of LES client peers (default: 100)
+  --lightkdf                   Reduce key-derivation RAM & CPU usage at some expense of KDF strength
+  --whitelist value            Comma separated block number-to-hash mappings to enforce (<number>=<hash>)
+  
+DEVELOPER CHAIN OPTIONS:
+  --dev               Ephemeral proof-of-authority network with a pre-funded developer account, mining enabled
+  --dev.period value  Block period to use in developer mode (0 = mine only if transaction pending) (default: 0)
+  
+ETHASH OPTIONS:
+  --ethash.cachedir                Directory to store the ethash verification caches (default = inside the datadir)
+  --ethash.cachesinmem value       Number of recent ethash caches to keep in memory (16MB each) (default: 2)
+  --ethash.cachesondisk value      Number of recent ethash caches to keep on disk (16MB each) (default: 3)
+  --ethash.dagdir "/root/.ethash"  Directory to store the ethash mining DAGs (default = inside home folder)
+  --ethash.dagsinmem value         Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
+  --ethash.dagsondisk value        Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
+  
+TRANSACTION POOL OPTIONS:
+  --txpool.locals value        Comma separated accounts to treat as locals (no flush, priority inclusion)
+  --txpool.nolocals            Disables price exemptions for locally submitted transactions
+  --txpool.journal value       Disk journal for local transaction to survive node restarts (default: "transactions.rlp")
+  --txpool.rejournal value     Time interval to regenerate the local transaction journal (default: 1h0m0s)
+  --txpool.pricelimit value    Minimum gas price limit to enforce for acceptance into the pool (default: 1)
+  --txpool.pricebump value     Price bump percentage to replace an already existing transaction (default: 10)
+  --txpool.accountslots value  Minimum number of executable transaction slots guaranteed per account (default: 16)
+  --txpool.globalslots value   Maximum number of executable transaction slots for all accounts (default: 4096)
+  --txpool.accountqueue value  Maximum number of non-executable transaction slots permitted per account (default: 64)
+  --txpool.globalqueue value   Maximum number of non-executable transaction slots for all accounts (default: 1024)
+  --txpool.lifetime value      Maximum amount of time non-executable transaction are queued (default: 3h0m0s)
+  
+PERFORMANCE TUNING OPTIONS:
+  --cache value            Megabytes of memory allocated to internal caching (default: 1024)
+  --cache.database value   Percentage of cache memory allowance to use for database io (default: 50)
+  --cache.trie value       Percentage of cache memory allowance to use for trie caching (default: 25)
+  --cache.gc value         Percentage of cache memory allowance to use for trie pruning (default: 25)
+  --trie-cache-gens value  Number of trie node generations to keep in memory (default: 120)
+  
+ACCOUNT OPTIONS:
+  --unlock value    Comma separated list of accounts to unlock
+  --password value  Password file to use for non-interactive password input
+  
+API AND CONSOLE OPTIONS:
+  --rpc                  Enable the HTTP-RPC server
+  --rpcaddr value        HTTP-RPC server listening interface (default: "localhost")
+  --rpcport value        HTTP-RPC server listening port (default: 8545)
+  --rpcapi value         API's offered over the HTTP-RPC interface
+  --ws                   Enable the WS-RPC server
+  --wsaddr value         WS-RPC server listening interface (default: "localhost")
+  --wsport value         WS-RPC server listening port (default: 8546)
+  --wsapi value          API's offered over the WS-RPC interface
+  --wsorigins value      Origins from which to accept websockets requests
+  --ipcdisable           Disable the IPC-RPC server
+  --ipcpath              Filename for IPC socket/pipe within the datadir (explicit paths escape it)
+  --rpccorsdomain value  Comma separated list of domains from which to accept cross origin requests (browser enforced)
+  --rpcvhosts value      Comma separated list of virtual hostnames from which to accept requests (server enforced). Accepts '*' wildcard. (default: "localhost")
+  --jspath loadScript    JavaScript root path for loadScript (default: ".")
+  --exec value           Execute JavaScript statement
+  --preload value        Comma separated list of JavaScript files to preload into the console
+  
+NETWORKING OPTIONS:
+  --bootnodes value     Comma separated enode URLs for P2P discovery bootstrap (set v4+v5 instead for light servers)
+  --bootnodesv4 value   Comma separated enode URLs for P2P v4 discovery bootstrap (light server, full nodes)
+  --bootnodesv5 value   Comma separated enode URLs for P2P v5 discovery bootstrap (light server, light nodes)
+  --port value          Network listening port (default: 30303)
+  --maxpeers value      Maximum number of network peers (network disabled if set to 0) (default: 25)
+  --maxpendpeers value  Maximum number of pending connection attempts (defaults used if set to 0) (default: 0)
+  --nat value           NAT port mapping mechanism (any|none|upnp|pmp|extip:<IP>) (default: "any")
+  --nodiscover          Disables the peer discovery mechanism (manual peer addition)
+  --v5disc              Enables the experimental RLPx V5 (Topic Discovery) mechanism
+  --netrestrict value   Restricts network communication to the given IP networks (CIDR masks)
+  --nodekey value       P2P node key file
+  --nodekeyhex value    P2P node key as hex (for testing)
+  
+MINER OPTIONS:
+  --mine                   Enable mining
+  --miner.threads value    Number of CPU threads to use for mining (default: 0)
+  --miner.notify value     Comma separated HTTP URL list to notify of new work packages
+  --miner.gasprice "1000"  Minimum gas price for mining a transaction
+  --miner.gastarget value  Target gas floor for mined blocks (default: 8000000)
+  --miner.gaslimit value   Target gas ceiling for mined blocks (default: 8000000)
+  --miner.etherbase value  Public address for block mining rewards (default = first account) (default: "0")
+  --miner.extradata value  Block extra data set by the miner (default = client version)
+  --miner.recommit value   Time interval to recreate the block being mined (default: 3s)
+  --miner.noverify         Disable remote sealing verification
+  
+GAS PRICE ORACLE OPTIONS:
+  --gpoblocks value      Number of recent blocks to check for gas prices (default: 20)
+  --gpopercentile value  Suggested gas price is the given percentile of a set of recent transaction gas prices (default: 60)
+  
+VIRTUAL MACHINE OPTIONS:
+  --vmdebug         Record information useful for VM and contract debugging
+  --vm.evm value    External EVM configuration (default = built-in interpreter)
+  --vm.ewasm value  External ewasm configuration (default = built-in interpreter)
+  
+LOGGING AND DEBUGGING OPTIONS:
+  --fakepow                 Disables proof-of-work verification
+  --nocompaction            Disables db compaction after import
+  --verbosity value         Logging verbosity: 0=silent, 1=error, 2=warn, 3=info, 4=debug, 5=detail (default: 3)
+  --vmodule value           Per-module verbosity: comma-separated list of <pattern>=<level> (e.g. eth/*=5,p2p=4)
+  --backtrace value         Request a stack trace at a specific logging statement (e.g. "block.go:271")
+  --debug                   Prepends log messages with call-site location (file and line number)
+  --pprof                   Enable the pprof HTTP server
+  --pprofaddr value         pprof HTTP server listening interface (default: "127.0.0.1")
+  --pprofport value         pprof HTTP server listening port (default: 6060)
+  --memprofilerate value    Turn on memory profiling with the given rate (default: 524288)
+  --blockprofilerate value  Turn on block profiling with the given rate (default: 0)
+  --cpuprofile value        Write CPU profile to the given file
+  --trace value             Write execution trace to the given file
+  
+METRICS AND STATS OPTIONS:
+  --metrics                          Enable metrics collection and reporting
+  --metrics.influxdb                 Enable metrics export/push to an external InfluxDB database
+  --metrics.influxdb.endpoint value  InfluxDB API endpoint to report metrics to (default: "http://localhost:8086")
+  --metrics.influxdb.database value  InfluxDB database name to push reported metrics to (default: "geth")
+  --metrics.influxdb.username value  Username to authorize access to the database (default: "test")
+  --metrics.influxdb.password value  Password to authorize access to the database (default: "test")
+  --metrics.influxdb.host.tag host   InfluxDB host tag attached to all measurements (default: "localhost")
+  
+WHISPER (EXPERIMENTAL) OPTIONS:
+  --shh                       Enable Whisper
+  --shh.maxmessagesize value  Max message size accepted (default: 1048576)
+  --shh.pow value             Minimum POW accepted (default: 0.2)
+  --shh.restrict-light        Restrict connection between two whisper light clients
+  
+DEPRECATED OPTIONS:
+  --minerthreads value    Number of CPU threads to use for mining (deprecated, use --miner.threads) (default: 0)
+  --targetgaslimit value  Target gas floor for mined blocks (deprecated, use --miner.gastarget) (default: 8000000)
+  --gasprice "1000"       Minimum gas price for mining a transaction (deprecated, use --miner.gasprice)
+  --etherbase value       Public address for block mining rewards (default = first account, deprecated, use --miner.etherbase) (default: "0")
+  --extradata value       Block extra data set by the miner (default = client version, deprecated, use --miner.extradata)
+  
+MISC OPTIONS:
+  --override.constantinople value  Manually specify constantinople fork-block, overriding the bundled setting (default: 0)
+  --help, -h                       show help
+  
+
+COPYRIGHT:
+   Copyright 2013-2018 The go-ethereum Authors
+   
+flag needs an argument: -verbosity
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: listen tcp :30301: bind: address already in use
