@@ -154,3 +154,11 @@ eth.blockNumber
 
 
  geth --rpcport 8501 --datadir node1/datadir --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3 --networkid 1112 --gasprice 1000 --targetgaslimit 9000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --etherbase 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --nat none --password passfile --verbosity 5
+
+
+
+
+ geth --rpcport 8501 --datadir node1/datadir --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,admin --networkid 1112 --gasprice 1000 --targetgaslimit 9000000 --rpccorsdomain '*' --mine --minerthreads 30 --unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --etherbase 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --nat none --password passfile
+
+
+  geth  --rpcport 8502 --datadir node2/datadir --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,admin --networkid 1112 --gasprice 1000 --targetgaslimit 9000000 --rpccorsdomain '*' --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile
