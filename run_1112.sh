@@ -45,10 +45,9 @@ nohup geth \
 --etherbase "$ACCOUNT" \
 --nat none \
 --password passfile  \
-
-#--netrestrict 103.126.156.0/24,172.101.0.0/24 \
 2> geth.log &
 #--nodiscover \
 #--syncmode full
 #--ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
 # --verbosity 5 \
+#--netrestrict 103.126.156.0/24,172.101.0.0/24 \
