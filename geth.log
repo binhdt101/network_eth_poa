@@ -1,44 +1,24 @@
-INFO [03-22|14:02:47.913] Maximum peer count                       ETH=25 LES=0 total=25
-INFO [03-22|14:02:47.914] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
-INFO [03-22|14:02:47.914] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata cache=512 handles=524288
-INFO [03-22|14:02:48.074] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
-INFO [03-22|14:02:48.075] Initialising Ethereum protocol           versions="[63 62]" network=1112
-INFO [03-22|14:02:48.194] Loaded most recent local header          number=0 hash=a1e0b6…abb714 td=1 age=2d22h12m
-INFO [03-22|14:02:48.194] Loaded most recent local full block      number=0 hash=a1e0b6…abb714 td=1 age=2d22h12m
-INFO [03-22|14:02:48.194] Loaded most recent local fast block      number=0 hash=a1e0b6…abb714 td=1 age=2d22h12m
-INFO [03-22|14:02:48.194] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [03-22|14:02:48.195] Stored checkpoint snapshot to disk       number=0 hash=a1e0b6…abb714
-INFO [03-22|14:02:48.286] New local node record                    seq=1 id=b1b4626f1f08323a ip=127.0.0.1 udp=30303 tcp=30303
-INFO [03-22|14:02:48.287] Started P2P networking                   self=enode://9295990b7a4560cde996a63eb1a3f068beb0716a5c5934c72dc55d784c06f021938fab3255a900fd480502be4a6e555ac235a85f696613d8c72ef8ea8f530f76@127.0.0.1:30303
-INFO [03-22|14:02:48.291] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node2/datadir/geth.ipc
-INFO [03-22|14:02:48.292] HTTP endpoint opened                     url=http://0.0.0.0:8502                                  cors=* vhosts=localhost
-INFO [03-22|14:02:49.237] Unlocked account                         address=0x2E5B167f68f04918d75F5a6f577A6eA6320225C0
-INFO [03-22|14:02:49.237] Transaction pool price threshold updated price=1000
-INFO [03-22|14:02:49.237] Transaction pool price threshold updated price=1000
-INFO [03-22|14:02:49.237] Commit new mining work                   number=1 sealhash=986fff…75c2d5 uncles=0 txs=0 gas=0 fees=0 elapsed=153.317µs
-INFO [03-22|14:02:49.667] Successfully sealed new block            number=1 sealhash=986fff…75c2d5 hash=17eb23…a08646 elapsed=429.729ms
-INFO [03-22|14:02:49.667] 🔨 mined potential block                  number=1 hash=17eb23…a08646
-INFO [03-22|14:02:49.668] Commit new mining work                   number=2 sealhash=398cd4…112b8b uncles=0 txs=0 gas=0 fees=0 elapsed=1.146ms
-INFO [03-22|14:02:49.668] Signed recently, must wait for others 
-INFO [03-22|14:03:18.288] Block synchronisation started 
-INFO [03-22|14:03:18.288] Mining aborted due to sync 
-INFO [03-22|14:03:18.294] Imported new block headers               count=1 elapsed=1.165ms   number=1 hash=9ab7c2…21e77c
-INFO [03-22|14:03:18.295] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=691.417µs mgasps=0.000 number=1 hash=9ab7c2…21e77c cache=0.00B
-INFO [03-22|14:03:18.295] Fast sync complete, auto disabling 
-INFO [03-22|14:03:18.296] Commit new mining work                   number=2 sealhash=e0ce1b…e49c09 uncles=1 txs=0 gas=0 fees=0 elapsed=500.803µs
-INFO [03-22|14:03:18.297] Commit new mining work                   number=2 sealhash=e0ce1b…e49c09 uncles=1 txs=0 gas=0 fees=0 elapsed=615.588µs
-INFO [03-22|14:03:18.297] Successfully sealed new block            number=2 sealhash=e0ce1b…e49c09 hash=40daa8…f75b44 elapsed=1.339ms
-INFO [03-22|14:03:18.297] 🔨 mined potential block                  number=2 hash=40daa8…f75b44
-INFO [03-22|14:03:18.301] Commit new mining work                   number=3 sealhash=610b96…e9c59b uncles=1 txs=0 gas=0 fees=0 elapsed=1.073ms
-INFO [03-22|14:03:18.302] Signed recently, must wait for others 
-INFO [03-22|14:03:18.303] Commit new mining work                   number=3 sealhash=66f8f8…329084 uncles=1 txs=1 gas=2330997 fees=2.330997e-09 elapsed=2.322ms
-INFO [03-22|14:03:18.303] Signed recently, must wait for others 
-INFO [03-22|14:03:23.007] Imported new chain segment               blocks=1 txs=1 mgas=2.331 elapsed=3.109ms   mgasps=749.561 number=3 hash=ceb855…c66de6 cache=1.24kB
-INFO [03-22|14:03:23.008] Commit new mining work                   number=4 sealhash=93908d…462ad2 uncles=1 txs=0 gas=0       fees=0            elapsed=423.554µs
-INFO [03-22|14:03:24.001] Successfully sealed new block            number=4 sealhash=93908d…462ad2 hash=da446c…18f405 elapsed=992.994ms
-INFO [03-22|14:03:24.001] 🔨 mined potential block                  number=4 hash=da446c…18f405
-INFO [03-22|14:03:24.002] Commit new mining work                   number=5 sealhash=5112bb…172feb uncles=1 txs=0 gas=0       fees=0            elapsed=1.292ms
-INFO [03-22|14:03:24.002] Signed recently, must wait for others 
-INFO [03-22|14:03:29.109] New local node record                    seq=2 id=b1b4626f1f08323a ip=103.126.156.18 udp=30303 tcp=30303
-INFO [03-22|14:03:29.113] New local node record                    seq=3 id=b1b4626f1f08323a ip=127.0.0.1      udp=30303 tcp=30303
-INFO [03-22|14:03:29.232] New local node record                    seq=4 id=b1b4626f1f08323a ip=103.126.156.18 udp=30303 tcp=30303
+nohup: appending output to 'nohup.out'
+INFO [03-22|14:14:53.030] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-22|14:14:53.032] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+INFO [03-22|14:14:53.032] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-22|14:14:53.178] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
+INFO [03-22|14:14:53.178] Initialising Ethereum protocol           versions="[63 62]" network=1112
+INFO [03-22|14:14:53.295] Loaded most recent local header          number=0 hash=a1e0b6…abb714 td=1 age=2d22h24m
+INFO [03-22|14:14:53.295] Loaded most recent local full block      number=0 hash=a1e0b6…abb714 td=1 age=2d22h24m
+INFO [03-22|14:14:53.295] Loaded most recent local fast block      number=0 hash=a1e0b6…abb714 td=1 age=2d22h24m
+INFO [03-22|14:14:53.296] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-22|14:14:53.296] Stored checkpoint snapshot to disk       number=0 hash=a1e0b6…abb714
+INFO [03-22|14:14:53.381] New local node record                    seq=1 id=c1c958206fe2b806 ip=127.0.0.1 udp=30302 tcp=30302
+INFO [03-22|14:14:53.382] Started P2P networking                   self=enode://f2489de93c0eee3e4e75ef6ff24ef2736147296b568509b0328b7c455286aef4058611a268beaa061eca6393d4f0668c603a0709a2b0df31b963a533300de4f4@127.0.0.1:30302
+INFO [03-22|14:14:53.386] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node2/datadir/geth.ipc
+INFO [03-22|14:14:53.387] HTTP endpoint opened                     url=http://0.0.0.0:8502                                  cors=* vhosts=localhost
+INFO [03-22|14:14:54.312] Unlocked account                         address=0x2E5B167f68f04918d75F5a6f577A6eA6320225C0
+INFO [03-22|14:14:54.312] Transaction pool price threshold updated price=1000
+INFO [03-22|14:14:54.312] Transaction pool price threshold updated price=1000
+INFO [03-22|14:14:54.313] Commit new mining work                   number=1 sealhash=3ea221…d5edb0 uncles=0 txs=0 gas=0 fees=0 elapsed=120.566µs
+INFO [03-22|14:14:54.667] Successfully sealed new block            number=1 sealhash=3ea221…d5edb0 hash=ab9a81…4d5f3f elapsed=354.468ms
+INFO [03-22|14:14:54.667] 🔨 mined potential block                  number=1 hash=ab9a81…4d5f3f
+INFO [03-22|14:14:54.668] Commit new mining work                   number=2 sealhash=ae601f…d6f4a5 uncles=0 txs=0 gas=0 fees=0 elapsed=1.127ms
+INFO [03-22|14:14:54.669] Signed recently, must wait for others 
+INFO [03-22|14:15:03.851] New local node record                    seq=2 id=c1c958206fe2b806 ip=103.126.156.18 udp=30302 tcp=30302
