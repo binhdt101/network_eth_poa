@@ -9,8 +9,8 @@
     "byzantiumBlock": 4,
     "constantinopleBlock": 5,
     "clique": {
-      "period": 5,
-      "epoch": 30000
+      "period": 1,
+      "epoch": 3000
     }
   },
   "nonce": "0x0",
