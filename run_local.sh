@@ -49,8 +49,9 @@ geth \
 --syncmode full \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
 --verbosity 5 \
+--nodiscover \
 console
 # 2> geth.log &
-#--nodiscover \
+
 
 #--netrestrict 103.126.156.0/24,172.101.0.0/24 \
