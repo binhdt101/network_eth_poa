@@ -29,20 +29,10 @@ case "$HOSTNAME" in
         ACCOUNT="0x10fff1170de86262d2f65cb81436e40f6c579b44"
     ;;
 esac
-<<<<<<< HEAD
-#nohup 
-#--syncmode full
-#-ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
-#--port $P2PPORT
-geth \
---rpcport $RPCPORT \
---datadir $NODENAME/datadir \
-=======
 
 nohup geth \
 --port $P2PPORT --rpcport $RPCPORT \
 --syncmode full --datadir $NODENAME/datadir \
->>>>>>> 8b3971c8c681d04c1e30a1270291cc2c1a215729
 --rpc --rpcaddr 0.0.0.0   \
 --rpcapi 'eth,admin' \
 --networkid 1112 --gasprice 1000   --targetgaslimit '9000000' \
