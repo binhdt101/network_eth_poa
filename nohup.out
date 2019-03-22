@@ -619,3 +619,5 @@ COPYRIGHT:
 flag needs an argument: -verbosity
 Fatal: Error starting protocol stack: datadir already used by another process
 Fatal: Error starting protocol stack: listen tcp :30301: bind: address already in use
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: datadir already used by another process

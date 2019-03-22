@@ -1,26 +1,123 @@
 nohup: appending output to 'nohup.out'
-INFO [03-21|16:19:48.405] Maximum peer count                       ETH=25 LES=0 total=25
-INFO [03-21|16:19:48.406] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
-INFO [03-21|16:19:48.406] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata cache=512 handles=524288
-INFO [03-21|16:19:48.545] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
-INFO [03-21|16:19:48.545] Initialising Ethereum protocol           versions="[63 62]" network=1112
-WARN [03-21|16:19:48.659] Head state missing, repairing chain      number=15 hash=5db665…0db879
-INFO [03-21|16:19:48.660] Rewound blockchain to past state         number=13 hash=ff941f…e773be
-INFO [03-21|16:19:48.660] Loaded most recent local header          number=15 hash=5db665…0db879 td=31 age=2m36s
-INFO [03-21|16:19:48.660] Loaded most recent local full block      number=13 hash=ff941f…e773be td=27 age=54m36s
-INFO [03-21|16:19:48.660] Loaded most recent local fast block      number=15 hash=5db665…0db879 td=31 age=2m36s
-INFO [03-21|16:19:48.660] Setting new local account                address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
-INFO [03-21|16:19:48.662] Loaded local transaction journal         transactions=5 dropped=0
-INFO [03-21|16:19:48.662] Regenerated local transaction journal    transactions=5 accounts=1
-INFO [03-21|16:19:48.806] New local node record                    seq=3 id=b2d0c8a06d6775a4 ip=127.0.0.1 udp=0 tcp=30301
-INFO [03-21|16:19:48.806] Started P2P networking                   self="enode://76ed8a7aecdeaf4585f19166fcf34821b9927ab4e4941d63bab1170fe1a2013f5454ec49ad2c25a5dde44987988c51c9319c1a3c9fb13e8be3ac1b69a489a964@127.0.0.1:30301?discport=0"
-INFO [03-21|16:19:48.808] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
-INFO [03-21|16:19:48.810] HTTP endpoint opened                     url=http://0.0.0.0:8501                                  cors=* vhosts=localhost
-INFO [03-21|16:19:48.810] WebSocket endpoint opened                url=ws://[::]:8541
-INFO [03-21|16:19:49.756] Unlocked account                         address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
-INFO [03-21|16:19:49.756] Transaction pool price threshold updated price=1000
-INFO [03-21|16:19:49.756] Transaction pool price threshold updated price=1000
-INFO [03-21|16:19:49.756] Commit new mining work                   number=14 sealhash=f1139c…e7836d uncles=0 txs=0 gas=0 fees=0 elapsed=140.136µs
-INFO [03-21|16:19:49.757] Signed recently, must wait for others 
-INFO [03-21|16:19:49.758] Commit new mining work                   number=14 sealhash=c7afbd…86c5f8 uncles=0 txs=4 gas=4758870 fees=4.75887e-09 elapsed=1.631ms
-INFO [03-21|16:19:49.758] Signed recently, must wait for others 
+INFO [03-22|14:54:21.601] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-22|14:54:21.602] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+INFO [03-22|14:54:21.602] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-22|14:54:21.734] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
+INFO [03-22|14:54:21.734] Initialising Ethereum protocol           versions="[63 62]" network=1112
+INFO [03-22|14:54:21.853] Loaded most recent local header          number=71 hash=18ab5c…34710b td=143 age=45s
+INFO [03-22|14:54:21.853] Loaded most recent local full block      number=71 hash=18ab5c…34710b td=143 age=45s
+INFO [03-22|14:54:21.853] Loaded most recent local fast block      number=71 hash=18ab5c…34710b td=143 age=45s
+INFO [03-22|14:54:21.853] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-22|14:54:21.853] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [03-22|14:54:21.853] Blockchain not empty, fast sync disabled 
+INFO [03-22|14:54:21.996] New local node record                    seq=5 id=ef327f5be9cef50f ip=127.0.0.1 udp=0 tcp=30301
+INFO [03-22|14:54:21.996] Started P2P networking                   self="enode://061ee04be9c77b4122208982ad9cbf3585aa0cdcdd9a93f16115ffd19fcb3a549b7f7ef39f954bcc0fe8e05b82fbddac889f5b7f44e8e4318ff15d2d44ef68d0@127.0.0.1:30301?discport=0"
+INFO [03-22|14:54:21.998] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
+INFO [03-22|14:54:21.998] HTTP endpoint opened                     url=http://0.0.0.0:8501                                  cors=* vhosts=localhost
+INFO [03-22|14:54:22.918] Unlocked account                         address=0xFFbcd481C1330E180879b4d2B9B50642EEa43C02
+INFO [03-22|14:54:22.918] Transaction pool price threshold updated price=1000
+INFO [03-22|14:54:22.918] Transaction pool price threshold updated price=1000
+INFO [03-22|14:54:22.918] Commit new mining work                   number=72 sealhash=bd83ed…42389e uncles=0 txs=0 gas=0 fees=0 elapsed=123.733µs
+INFO [03-22|14:54:22.918] Signed recently, must wait for others 
+INFO [03-22|14:54:51.994] Block synchronisation started 
+INFO [03-22|14:54:51.994] Mining aborted due to sync 
+INFO [03-22|14:54:52.000] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.474ms   mgasps=0.000 number=72 hash=558b52…3b19a9 age=1m15s cache=0.00B
+INFO [03-22|14:54:52.001] Commit new mining work                   number=73 sealhash=5bfacb…5e5881 uncles=0 txs=0 gas=0 fees=0 elapsed=456.949µs
+INFO [03-22|14:54:52.001] Commit new mining work                   number=73 sealhash=5bfacb…5e5881 uncles=0 txs=0 gas=0 fees=0 elapsed=582.447µs
+INFO [03-22|14:54:52.002] Successfully sealed new block            number=73 sealhash=5bfacb…5e5881 hash=a0f605…ca3a89 elapsed=1.307ms
+INFO [03-22|14:54:52.002] 🔨 mined potential block                  number=73 hash=a0f605…ca3a89
+INFO [03-22|14:54:52.003] Commit new mining work                   number=74 sealhash=3c1cca…fd9dbf uncles=0 txs=0 gas=0 fees=0 elapsed=1.124ms
+INFO [03-22|14:54:52.003] Signed recently, must wait for others 
+INFO [03-22|14:54:53.001] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.399ms   mgasps=0.000 number=74 hash=24ef5c…0a7b3f cache=0.00B
+INFO [03-22|14:54:53.001] Commit new mining work                   number=75 sealhash=5430bb…68681c uncles=0 txs=0 gas=0 fees=0 elapsed=323.831µs
+INFO [03-22|14:54:54.001] Successfully sealed new block            number=75 sealhash=5430bb…68681c hash=10b1e8…c3943b elapsed=999.498ms
+INFO [03-22|14:54:54.001] 🔨 mined potential block                  number=75 hash=10b1e8…c3943b
+INFO [03-22|14:54:54.002] Commit new mining work                   number=76 sealhash=4c8869…b737c5 uncles=0 txs=0 gas=0 fees=0 elapsed=1.108ms
+INFO [03-22|14:54:54.002] Signed recently, must wait for others 
+INFO [03-22|14:54:56.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.482ms   mgasps=0.000 number=76 hash=460f05…8e7e61 cache=0.00B
+INFO [03-22|14:54:56.855] Commit new mining work                   number=77 sealhash=46a2fc…1ad6ce uncles=0 txs=0 gas=0 fees=0 elapsed=270.977µs
+INFO [03-22|14:54:56.857] Successfully sealed new block            number=77 sealhash=46a2fc…1ad6ce hash=c54ad2…d2cbe5 elapsed=1.336ms
+INFO [03-22|14:54:56.857] 🔨 mined potential block                  number=77 hash=c54ad2…d2cbe5
+INFO [03-22|14:54:56.858] Commit new mining work                   number=78 sealhash=8f9776…06fc6b uncles=0 txs=0 gas=0 fees=0 elapsed=1.104ms
+INFO [03-22|14:54:56.858] Signed recently, must wait for others 
+INFO [03-22|14:55:01.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.359ms   mgasps=0.000 number=78 hash=33bc44…56e0d9 cache=0.00B
+INFO [03-22|14:55:01.855] Commit new mining work                   number=79 sealhash=ecd00e…baca88 uncles=0 txs=0 gas=0 fees=0 elapsed=288.904µs
+INFO [03-22|14:55:01.856] Successfully sealed new block            number=79 sealhash=ecd00e…baca88 hash=5d9c38…b61a87 elapsed=1.230ms
+INFO [03-22|14:55:01.856] 🔨 mined potential block                  number=79 hash=5d9c38…b61a87
+INFO [03-22|14:55:01.857] Commit new mining work                   number=80 sealhash=29bd8f…12eed2 uncles=0 txs=0 gas=0 fees=0 elapsed=1.102ms
+INFO [03-22|14:55:01.858] Signed recently, must wait for others 
+INFO [03-22|14:55:06.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.324ms   mgasps=0.000 number=80 hash=66b8ee…ee1bbf cache=0.00B
+INFO [03-22|14:55:06.855] 🔗 block reached canonical chain          number=73 hash=a0f605…ca3a89
+INFO [03-22|14:55:06.855] Commit new mining work                   number=81 sealhash=677563…fae470 uncles=0 txs=0 gas=0 fees=0 elapsed=518.208µs
+INFO [03-22|14:55:06.856] Successfully sealed new block            number=81 sealhash=677563…fae470 hash=dba07d…54ded1 elapsed=1.184ms
+INFO [03-22|14:55:06.856] 🔨 mined potential block                  number=81 hash=dba07d…54ded1
+INFO [03-22|14:55:06.858] Commit new mining work                   number=82 sealhash=aa6ef1…43a715 uncles=0 txs=0 gas=0 fees=0 elapsed=1.113ms
+INFO [03-22|14:55:06.858] Signed recently, must wait for others 
+INFO [03-22|14:55:11.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=2.266ms   mgasps=0.000 number=82 hash=a0a7b3…223d41 cache=0.00B
+INFO [03-22|14:55:11.856] 🔗 block reached canonical chain          number=75 hash=10b1e8…c3943b
+INFO [03-22|14:55:11.856] Commit new mining work                   number=83 sealhash=c63c66…791248 uncles=0 txs=0 gas=0 fees=0 elapsed=392.733µs
+INFO [03-22|14:55:11.857] Successfully sealed new block            number=83 sealhash=c63c66…791248 hash=5c3f4d…a6b619 elapsed=1.183ms
+INFO [03-22|14:55:11.857] 🔨 mined potential block                  number=83 hash=5c3f4d…a6b619
+INFO [03-22|14:55:11.858] Commit new mining work                   number=84 sealhash=9258d5…440b66 uncles=0 txs=0 gas=0 fees=0 elapsed=1.122ms
+INFO [03-22|14:55:11.859] Signed recently, must wait for others 
+INFO [03-22|14:55:16.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.349ms   mgasps=0.000 number=84 hash=ad8b1d…02da37 cache=0.00B
+INFO [03-22|14:55:16.855] 🔗 block reached canonical chain          number=77 hash=c54ad2…d2cbe5
+INFO [03-22|14:55:16.855] Commit new mining work                   number=85 sealhash=cf6aa6…b66e7c uncles=0 txs=0 gas=0 fees=0 elapsed=431.021µs
+INFO [03-22|14:55:16.857] Successfully sealed new block            number=85 sealhash=cf6aa6…b66e7c hash=be6ca7…e18a10 elapsed=1.336ms
+INFO [03-22|14:55:16.857] 🔨 mined potential block                  number=85 hash=be6ca7…e18a10
+INFO [03-22|14:55:16.858] Commit new mining work                   number=86 sealhash=ef4758…ad4591 uncles=0 txs=0 gas=0 fees=0 elapsed=1.052ms
+INFO [03-22|14:55:16.858] Signed recently, must wait for others 
+INFO [03-22|14:55:21.857] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=4.058ms   mgasps=0.000 number=86 hash=4f875c…651616 cache=0.00B
+INFO [03-22|14:55:21.858] 🔗 block reached canonical chain          number=79 hash=5d9c38…b61a87
+INFO [03-22|14:55:21.858] Commit new mining work                   number=87 sealhash=391035…6b2d8f uncles=0 txs=0 gas=0 fees=0 elapsed=370.397µs
+INFO [03-22|14:55:21.859] Successfully sealed new block            number=87 sealhash=391035…6b2d8f hash=31acf2…fe1bf8 elapsed=1.204ms
+INFO [03-22|14:55:21.859] 🔨 mined potential block                  number=87 hash=31acf2…fe1bf8
+INFO [03-22|14:55:21.860] Commit new mining work                   number=88 sealhash=f190c5…3f568b uncles=0 txs=0 gas=0 fees=0 elapsed=1.045ms
+INFO [03-22|14:55:21.860] Signed recently, must wait for others 
+INFO [03-22|14:55:26.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.992ms   mgasps=0.000 number=88 hash=ca06d5…1ad21e cache=0.00B
+INFO [03-22|14:55:26.856] 🔗 block reached canonical chain          number=81 hash=dba07d…54ded1
+INFO [03-22|14:55:26.856] Commit new mining work                   number=89 sealhash=08b4b9…f1320c uncles=0 txs=0 gas=0 fees=0 elapsed=445.161µs
+INFO [03-22|14:55:26.857] Successfully sealed new block            number=89 sealhash=08b4b9…f1320c hash=25e706…ed5a45 elapsed=1.321ms
+INFO [03-22|14:55:26.857] 🔨 mined potential block                  number=89 hash=25e706…ed5a45
+INFO [03-22|14:55:26.858] Commit new mining work                   number=90 sealhash=bdd500…a48df9 uncles=0 txs=0 gas=0 fees=0 elapsed=1.130ms
+INFO [03-22|14:55:26.858] Signed recently, must wait for others 
+INFO [03-22|14:55:31.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.355ms   mgasps=0.000 number=90 hash=919032…4114be cache=0.00B
+INFO [03-22|14:55:31.856] 🔗 block reached canonical chain          number=83 hash=5c3f4d…a6b619
+INFO [03-22|14:55:31.856] Commit new mining work                   number=91 sealhash=ea58af…95a7c8 uncles=0 txs=0 gas=0 fees=0 elapsed=396.171µs
+INFO [03-22|14:55:31.857] Successfully sealed new block            number=91 sealhash=ea58af…95a7c8 hash=9dba24…50ffa3 elapsed=1.120ms
+INFO [03-22|14:55:31.857] 🔨 mined potential block                  number=91 hash=9dba24…50ffa3
+INFO [03-22|14:55:31.858] Commit new mining work                   number=92 sealhash=304048…bc1c13 uncles=0 txs=0 gas=0 fees=0 elapsed=1.024ms
+INFO [03-22|14:55:31.858] Signed recently, must wait for others 
+INFO [03-22|14:55:36.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=1.435ms   mgasps=0.000 number=92 hash=585a58…ec7381 cache=0.00B
+INFO [03-22|14:55:36.856] 🔗 block reached canonical chain          number=85 hash=be6ca7…e18a10
+INFO [03-22|14:55:36.857] Commit new mining work                   number=93 sealhash=32d547…eac58b uncles=0 txs=0 gas=0 fees=0 elapsed=442.165µs
+INFO [03-22|14:55:36.858] Successfully sealed new block            number=93 sealhash=32d547…eac58b hash=f3cd94…7cb5d3 elapsed=1.421ms
+INFO [03-22|14:55:36.858] 🔨 mined potential block                  number=93 hash=f3cd94…7cb5d3
+INFO [03-22|14:55:36.859] Commit new mining work                   number=94 sealhash=8b38e6…e65e89 uncles=0 txs=0 gas=0 fees=0 elapsed=975.226µs
+INFO [03-22|14:55:36.859] Signed recently, must wait for others 
+INFO [03-22|14:55:41.856] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=2.345ms   mgasps=0.000 number=94 hash=ad89b2…ca89f1 cache=0.00B
+INFO [03-22|14:55:41.856] 🔗 block reached canonical chain          number=87 hash=31acf2…fe1bf8
+INFO [03-22|14:55:41.856] Commit new mining work                   number=95 sealhash=621ff0…e94728 uncles=0 txs=0 gas=0 fees=0 elapsed=372.327µs
+INFO [03-22|14:55:41.857] Successfully sealed new block            number=95 sealhash=621ff0…e94728 hash=d23bb1…2f3e7c elapsed=1.279ms
+INFO [03-22|14:55:41.857] 🔨 mined potential block                  number=95 hash=d23bb1…2f3e7c
+INFO [03-22|14:55:41.859] Commit new mining work                   number=96 sealhash=ad67ea…9457df uncles=0 txs=0 gas=0 fees=0 elapsed=1.098ms
+INFO [03-22|14:55:41.859] Signed recently, must wait for others 
+INFO [03-22|14:55:46.855] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=2.145ms   mgasps=0.000 number=96 hash=608331…49025b cache=0.00B
+INFO [03-22|14:55:46.856] 🔗 block reached canonical chain          number=89 hash=25e706…ed5a45
+INFO [03-22|14:55:46.856] Commit new mining work                   number=97 sealhash=8c3581…b880e9 uncles=0 txs=0 gas=0 fees=0 elapsed=397.898µs
+INFO [03-22|14:55:46.857] Successfully sealed new block            number=97 sealhash=8c3581…b880e9 hash=fd692e…754613 elapsed=1.277ms
+INFO [03-22|14:55:46.857] 🔨 mined potential block                  number=97 hash=fd692e…754613
+INFO [03-22|14:55:46.858] Commit new mining work                   number=98 sealhash=97d273…e61d43 uncles=0 txs=0 gas=0 fees=0 elapsed=1.040ms
+INFO [03-22|14:55:46.859] Signed recently, must wait for others 
+INFO [03-22|14:55:47.772] Got interrupt, shutting down... 
+INFO [03-22|14:55:47.772] HTTP endpoint closed                     url=http://0.0.0.0:8501
+INFO [03-22|14:55:47.772] IPC endpoint closed                      url=/app/ethereum/network_eth_poa/node1/datadir/geth.ipc
+INFO [03-22|14:55:47.773] Writing cached state to disk             block=97 hash=fd692e…754613 root=db5277…84e6c5
+INFO [03-22|14:55:47.773] Persisted trie from memory database      nodes=0 size=0.00B time=7.436µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-22|14:55:47.773] Writing cached state to disk             block=96 hash=608331…49025b root=db5277…84e6c5
+INFO [03-22|14:55:47.773] Persisted trie from memory database      nodes=0 size=0.00B time=3.338µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-22|14:55:47.774] Blockchain manager stopped 
+INFO [03-22|14:55:47.774] Stopping Ethereum protocol 
+INFO [03-22|14:55:47.774] Ethereum protocol stopped 
+INFO [03-22|14:55:47.774] Transaction pool stopped 
+INFO [03-22|14:55:47.774] Database closed                          database=/app/ethereum/network_eth_poa/node1/datadir/geth/chaindata
