@@ -1,28 +1,29 @@
-HOSTNAME=$(hostname)
-
-NODENAME="node1";
+NODENAME="$1";
 P2PPORT=30301;
 RPCPORT=8501;
 WSPORT=8541;
 ACCOUNT="0xffbcd481c1330e180879b4d2b9b50642eea43c02"
 
-case "$HOSTNAME" in
-    "blockchain-2")
-        NODENAME="node2";
+case "$NODENAME" in
+    "node1")
+        P2PPORT=30301;
+        RPCPORT=8501;
+        WSPORT=8541;
+        ACCOUNT="0xffbcd481c1330e180879b4d2b9b50642eea43c02"
+        ;;
+    "node2")
         P2PPORT=30302;
         RPCPORT=8502;
         WSPORT=8542;
         ACCOUNT="0x2e5b167f68f04918d75f5a6f577a6ea6320225c0"
       ;;
-    "blockchain-3")
-        NODENAME="node3";
+    "node3")
         P2PPORT=30303;
         RPCPORT=8503;
         WSPORT=8543;
         ACCOUNT="0x8f406623e619be85e02b8bb6e4f4ed5c24816e6d"
     ;;
-    "block-chain5")
-        NODENAME="node4";
+    "node4")
         P2PPORT=30304;
         RPCPORT=8504;
         WSPORT=8544;
@@ -30,18 +31,14 @@ case "$HOSTNAME" in
     ;;
 esac
 
-<<<<<<< HEAD
-#nohup 
-=======
->>>>>>> 867e881838694a0d3df7c1ce4ab0b98ecb6b4b81
 geth \
 --port $P2PPORT --rpcport $RPCPORT \
 --datadir $NODENAME/datadir \
 --rpc --rpcaddr 0.0.0.0   \
---rpcapi 'eth,admin' \
+--rpcapi 'personal,db,eth,net,web3,txpool,miner,network,debug' \
 --networkid 1112 \
 --gasprice 1000  \
---targetgaslimit 9000000 \
+--targetgaslimit 900000000000000000 \
 --rpccorsdomain '*' \
 --mine  \
 --minerthreads 30  \
@@ -49,17 +46,10 @@ geth \
 --etherbase "$ACCOUNT" \
 --nat none \
 --password passfile  \
-<<<<<<< HEAD
-#2> geth.log &
-
-#--verbosity 3
+--syncmode full \
+--ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
+console
+# 2> geth.log &
 #--nodiscover \
-=======
-#--nodiscover \
-#2> geth.log &
-
->>>>>>> 867e881838694a0d3df7c1ce4ab0b98ecb6b4b81
-#--syncmode full
-#--ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
 # --verbosity 5 \
 #--netrestrict 103.126.156.0/24,172.101.0.0/24 \

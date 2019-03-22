@@ -625,6 +625,10 @@ COPYRIGHT:
 flag needs an argument: -verbosity
 Fatal: Error starting protocol stack: datadir already used by another process
 Fatal: Error starting protocol stack: listen tcp :30301: bind: address already in use
+<<<<<<< HEAD
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: datadir already used by another process
+=======
 >>>>>>> 2b8d261735531112d6c583a1d634e6538460e162
 binhnt: start main [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
 binhnt: run with arguments [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
@@ -1998,3 +2002,4 @@ INFO [03-22|13:26:27.638] Transaction pool stopped
 INFO [03-22|13:26:27.638] Database closed                          database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata
 DEBUG[03-22|13:26:27.638] Read error                               err="accept tcp [::]:30302: use of closed network connection"
 TRACE[03-22|13:26:27.638] P2P networking is spinning down 
+>>>>>>> a0b40fb7b8154a9b680d8149b4f271623410f8e3
