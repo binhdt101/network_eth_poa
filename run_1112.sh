@@ -37,7 +37,7 @@ nohup geth \
 --rpcapi 'eth,admin' \
 --networkid 1112 \
 --gasprice 1000  \
- --targetgaslimit 9000000 \
+--targetgaslimit 9000000 \
 --rpccorsdomain '*' \
 --mine  \
 --minerthreads 30  \
