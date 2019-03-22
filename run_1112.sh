@@ -29,6 +29,7 @@ case "$HOSTNAME" in
         ACCOUNT="0x10fff1170de86262d2f65cb81436e40f6c579b44"
     ;;
 esac
+<<<<<<< HEAD
 #nohup 
 #--syncmode full
 #-ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
@@ -36,6 +37,12 @@ esac
 geth \
 --rpcport $RPCPORT \
 --datadir $NODENAME/datadir \
+=======
+
+nohup geth \
+--port $P2PPORT --rpcport $RPCPORT \
+--syncmode full --datadir $NODENAME/datadir \
+>>>>>>> 8b3971c8c681d04c1e30a1270291cc2c1a215729
 --rpc --rpcaddr 0.0.0.0   \
 --rpcapi 'eth,admin' \
 --networkid 1112 --gasprice 1000   --targetgaslimit '9000000' \
@@ -48,5 +55,6 @@ geth \
 --password passfile  \
 --netrestrict 103.126.156.0/24,172.101.0.0/24 \
 2> geth.log &
+#--ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
 # --verbosity 5 \
 
