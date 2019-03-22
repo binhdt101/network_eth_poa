@@ -151,3 +151,6 @@ clique.proposals
 
 eth.syncing
 eth.blockNumber
+
+
+ geth --rpcport 8501 --datadir node1/datadir --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3 --networkid 1112 --gasprice 1000 --targetgaslimit 9000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --etherbase 0xffbcd481c1330e180879b4d2b9b50642eea43c02 --nat none --password passfile --verbosity 5
