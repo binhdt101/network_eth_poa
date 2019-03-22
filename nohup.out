@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: listen tcp :30302: bind: address already in use
+Fatal: Error starting protocol stack: listen tcp :30302: bind: address already in use
+Fatal: Error starting protocol stack: datadir already used by another process
+=======
 INFO [03-18|15:10:30.385] Maximum peer count                       ETH=25 LES=0 total=25
 WARN [03-18|15:10:30.386] Found deprecated node list file /app/ethereum/network_eth_poa/node1/datadir/geth/static-nodes.json, please use the TOML config file instead. 
 INFO [03-18|15:10:30.386] Starting peer-to-peer node               instance=Geth/v1.8.21-stable-9dc5d1a9/linux-amd64/go1.10.4
@@ -619,3 +625,1376 @@ COPYRIGHT:
 flag needs an argument: -verbosity
 Fatal: Error starting protocol stack: datadir already used by another process
 Fatal: Error starting protocol stack: listen tcp :30301: bind: address already in use
+>>>>>>> 2b8d261735531112d6c583a1d634e6538460e162
+binhnt: start main [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
+binhnt: run with arguments [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
+binhnt.node.node: New: create new node
+binhnt.node.node New create account manager
+binhnt.node.config makeAccountManager start create account manager
+binhnt.node.config makeAccountManager backends= [0xc42019c780]
+binhnt.node.config makeAccountManager final backends= [0xc42019c780 0xc420402c80 0xc420402dc0]
+binhnt.accounts.manager NewManager start new manager
+binhnt.accounts.manager NewManager add backend wallets
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Assemble the account manager and return
+binhnt.accounts.manager NewManager backend &{0xc4200f5170 0xc42034c5a0 0xc4202849c0 map[] [0xc42027d340] {{{0 0} 1} 0xc420284ba0 0xc420284b40 [{2 {0xddf460 0xc420284b40 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019ee40 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc4203e2ac0:{}] false} true {{0 0} 0 0 0 0}}
+binhnt.accounts.manager NewManager backend &{ledger 11415 [0 1] 65440 0 0x9f5280 {13771153661244156871 52524257 0x1bc7b60} [] {{{0 0} 1} 0xc420284c60 0xc420284c00 [{2 {0xddf460 0xc420284c00 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019ee40 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc4203e2ae0:{}] false} true 0xc420284a80 {{0 0} 0 0 0 0} 0 {0 0}}
+binhnt.accounts.manager NewManager backend &{trezor 21324 [1] 65280 0 0x9f82d0 {13771153661244206131 52573506 0x1bc7b60} [] {{{0 0} 1} 0xc420284d20 0xc420284cc0 [{2 {0xddf460 0xc420284cc0 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019ee40 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc4203e2b20:{}] false} true 0xc420284ae0 {{0 0} 0 0 0 0} 0 {0 0}}
+binhnt.accounts.manager NewManager start thread to update account manager
+binhnt.node.node New: create node
+binhnt.geth.main: startNode:  start node
+binhnt.geth.main: startNode call utils.StartNode(stack)
+binhnt.utils.cmd utils.StartNode: stack
+binhnt.node.node Start start node
+binhnt.node.node Start start p2p server:  Geth/v1.8.22-unstable-2b28b435/linux-amd64/go1.10.4
+binhnt.node.node Start  create service context
+binhnt.node.node.go Start construct and save service 
+binhnt.eth.backend New  start a ethereum with config =  &{<nil> 1112 full false map[] 0 100 false 524288 512 256 256 1h0m0s [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] [] [] 900000000000000000 8000000 1000 3s false {ethash 2 3 /root/.ethash 1 2 0} {[] false transactions.rlp 1h0m0s 1 10 16 4096 64 1024 3h0m0s} {20 60 <nil>} false    <nil>}
+binhnt.eth.backend New  create db object 
+binhnt.eth.backend CreateDB  try to open db
+binhnt.eth.backend New  call SetupGenesisBlockWithOverride 
+binhnt.eth.backend New  create new  ethereum chain
+binhnt.eth.backend CreateConsensusEngine  create consensus engin with chainConfig =  {1112 1 <nil> false 2 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] 3 3 4 5 <nil> ethash clique} ethash.Config =  {ethash 2 3 /root/.ethash 1 2 0}
+binhnt.eth.backend New Initialising Ethereum protocol versions [63 62] network 1112
+binhnt.eth.backend New call rawdb.ReadDatabaseVersion to chainDb
+binhnt.eth.backend New write chainDb to version =  3
+binhnt.eth.backend New  initial vm.Config
+binhnt.eth.backend New  setup eth.blockchain with  core.NewBlockChain(chainD...)
+binhnt.core.block_validator NewBlockValidator start create block validator
+binhnt.core.state_processor NewStateProcessor 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.eth.backend New  check and rewrite the chain 
+binhnt.eth.backend New  start 	eth.bloomIndexer
+binhnt.core.chain_indexer ChainIndexer.Start  start 	channel and subcribe to chain and call event loop 
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.eth.backend New  create new transaction pool with config and eth.chainConfig and blockchain
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.chain_indexer ChainIndexer.eventLoop  start  event loop 
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   [[255 188 212 129 193 51 14 24 8 121 180 210 185 181 6 66 238 164 60 2]]
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.eth.backend New  create protocol manager
+binhnt.eth.backend New  create miner
+binhnt.miner.miner.go New Create new miner and run update
+binhnt.miner.worker.go newWorker create a worker
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.core.blockchain BlockChain.SubscribeChainSideEvent  subscribe chainside events
+binhnt.miner.worker.go newWorker start mainloop
+binhnt.miner.worker.go newWorker start newWorkLoop
+binhnt.miner.worker.go newWorker start resultLoop
+binhnt.miner.worker.go newWorker start taskLoop
+binhnt.eth.backend makeExtraData  call makeExtraData
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [216 131 1 8 22 132 103 101 116 104 136 103 111 49 46 49 48 46 52 133 108 105 110 117 120]
+binhnt.eth.backend New  setup APIBackend
+binhnt.eth.backend New  setup APIBackend.gpo = gasprice.NewOracle
+binhnt.eth.gasprice.gasprice NewOracle create new oracle in order to estimate gasprice
+binhnt.eth.backend New  return ethereum pointer
+binhnt.node.node.go Start Add service  &{0xc420351400 0xc4202a6080 0xc4200e6360 0xc4203d9dc0 0xc430e14000 0xc4200f7ee0 <nil> 0xc4201414a0 0xc4200f54a0 0xc4202ccbd0 0xc4200f7e10 0xc4200e63c0 0xc420152300 0xc420274d60 0xc420123560 0xc420315f80 [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] 1112 <nil> {{0 0} 0 0 0 0}} type:  *eth.Ethereum  to queues
+binhnt.eth.backend Protocols  get list p2p.Protocol
+binhnt.node.node Start running.Protocols  [{eth 63 17 0xae99c0 0xae9bf0 0xae9c50 []} {eth 62 8 0xae99c0 0xae9bf0 0xae9c50 []}]
+binhnt.eth.backend Protocols  get list p2p.Protocol
+binhnt.node.node Start Call  running.Start()
+binhnt.p2pserver Server.Start() Start running
+binhnt.p2pserver Server.Start() Create event channels
+binhnt.p2pserver Server.Start() setup local node
+binhnt.miner.worker.go worker.newWorkLoop  submit new mining work upon received events
+binhnt.miner.worker.go worker.newWorkLoop start timer with recommit:  3s
+binhnt.miner.worker.go worker.newWorkLoop  define commit function
+binhnt.miner.worker.go worker.newWorkLoop  define recalcRecommit function
+binhnt.miner.miner.go update  Start subcribe to  downloader.StartEvent
+binhnt.miner.worker.go worker.taskLoop  fetch sealing task from the generator and push them to consensus engine 
+binhnt.miner.worker.go worker.resultLoop  to handle sealing result submitting and flush relative data to the database.
+binhnt.miner.worker.go worker.mainLoop  regenerate the sealing task based on the received event
+binhnt.miner.worker.go worker.newWorkLoop  define clearPending function
+binhnt.miner.worker.go worker.newWorkLoop  start loop and listening event
+binhnt.miner.worker.go worker.newWorkLoop  Event from startCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.p2pserver Server.Start() setup Listening
+binhnt.p2pserver Server.Start() setup discovery
+binhnt.p2pserver Server.Start() Create new newDialState
+binhnt.p2pserver Server.Start() Create thread run dialer 
+binhnt.node.node: Start start service =  &{0xc420351400 0xc4202a6080 0xc4200e6360 0xc4203d9dc0 0xc430e14000 0xc4200f7ee0 <nil> 0xc4201414a0 0xc4200f54a0 0xc4202ccbd0 0xc4200f7e10 0xc4200e63c0 0xc420152300 0xc420274d60 0xc420123560 0xc420315f80 [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] 1112 <nil> {{0 0} 0 0 0 0}}  with kind =  *eth.Ethereum
+binhnt.eth.backend Start  start Ethereum backend with p2p.Server
+binhnt.eth.backend Start  call startBloomHandlers
+binhnt.eth.backend Start  Start the RPC service with ethapi.NewPublicNetAPI 
+binhnt.internal.ethapi.api NewPublicNetAPI  call PublicNetAPI
+binhnt.node.node: Node.Start: append kind =  *eth.Ethereum  to started list
+binhnt.node.node.go: Node.Start:  Start the configured RPC interfaces
+binhnt.node.node startRPC services =  map[*eth.Ethereum:0xc42033c9a0]
+binhnt.eth.backend APIs  call ethapi.GetAPIs
+binhnt.internal.ethapi.backend GetAPIs  get list of rpc apis of backend
+binhnt.internal.ethapi.api NewPublicEthereumAPI create new PublicEthereumAPI
+binhnt.internal.ethapi.api NewPublicBlockChainAPI create new PublicBlockChainAPI
+binhnt.internal.ethapi.api NewPublicTransactionPoolAPI create new PublicTransactionPoolAPI
+binhnt.internal.ethapi.api NewPublicTxPoolAPI create new PublicTxPoolAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.internal.ethapi.api NewPublicAccountAPI  create new  PublicAccountAPI
+binhnt.internal.ethapi.api NewPrivateAccountAPI  create new PrivateAccountAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.eth.api NewPublicEthereumAPI create new PublicEthereumAPI for an Ethereum network
+binhnt.eth.api NewPublicMinerAPI  create new PublicMinerAPI for an ethererum 
+binhnt.eth.api NewPrivateMinerAPI  create new PrivateMinerAPI for an ethererum 
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.ChainDb  get ChainDb
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.SubscribeNewTxsEvent  get SubscribeNewTxsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeLogsEvent  get SubscribeLogsEvent
+binhnt.core.blockchain BlockChain.SubscribeLogsEvent  subscribe log events
+binhnt.eth.api_backend EthAPIBackend.SubscribeRemovedLogsEvent  get SubscribeRemovedLogsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeChainEvent  get SubscribeChainEvent
+binhnt.core.blockchain BlockChain.SubscribeChainEvent  subscribe change events
+binhnt.eth.api NewPrivateAdminAPI  create new PrivateAdminAPI 
+binhnt.eth.api NewPublicDebugAPI.ImportChain  create new PublicDebugAPI
+binhnt.eth.backend APIs  call ethapi.GetAPIs
+binhnt.internal.ethapi.backend GetAPIs  get list of rpc apis of backend
+binhnt.internal.ethapi.api NewPublicEthereumAPI create new PublicEthereumAPI
+binhnt.internal.ethapi.api NewPublicBlockChainAPI create new PublicBlockChainAPI
+binhnt.internal.ethapi.api NewPublicTransactionPoolAPI create new PublicTransactionPoolAPI
+binhnt.internal.ethapi.api NewPublicTxPoolAPI create new PublicTxPoolAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.internal.ethapi.api NewPublicAccountAPI  create new  PublicAccountAPI
+binhnt.internal.ethapi.api NewPrivateAccountAPI  create new PrivateAccountAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.eth.api NewPublicEthereumAPI create new PublicEthereumAPI for an Ethereum network
+binhnt.eth.api NewPublicMinerAPI  create new PublicMinerAPI for an ethererum 
+binhnt.eth.api NewPrivateMinerAPI  create new PrivateMinerAPI for an ethererum 
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.ChainDb  get ChainDb
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.SubscribeNewTxsEvent  get SubscribeNewTxsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeLogsEvent  get SubscribeLogsEvent
+binhnt.core.blockchain BlockChain.SubscribeLogsEvent  subscribe log events
+binhnt.eth.api_backend EthAPIBackend.SubscribeRemovedLogsEvent  get SubscribeRemovedLogsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeChainEvent  get SubscribeChainEvent
+binhnt.core.blockchain BlockChain.SubscribeChainEvent  subscribe change events
+binhnt.eth.api NewPrivateAdminAPI  create new PrivateAdminAPI 
+binhnt.eth.api NewPublicDebugAPI.ImportChain  create new PublicDebugAPI
+binhnt.node.node startRPC append service  [{eth 1.0 0xc4202b45d0 true} {eth 1.0 0xc4202b45e0 true} {eth 1.0 0xc431b8a180 true} {txpool 1.0 0xc4202b45f0 true} {debug 1.0 0xc4202b4600 true} {debug 1.0 0xc4202b4610 false} {eth 1.0 0xc4312da750 true} {personal 1.0 0xc431b8a1a0 false} {clique 1.0 0xc431b8a1c0 false} {eth 1.0 0xc4312da758 true} {eth 1.0 0xc4312da760 true} {eth 1.0 0xc431b8a1e0 true} {miner 1.0 0xc4312da768 false} {eth 1.0 0xc431306aa0 true} {admin 1.0 0xc4312da770 false} {debug 1.0 0xc4312da778 true} {debug 1.0 0xc4202b4670 false} {net 1.0 0xc4202b44c0 true}]
+binhnt.node.node startRPC start startInProc
+binhnt.node.node startInProc  create new rpc server with apis =  [{admin 1.0 0xc4312da6f8 false} {admin 1.0 0xc4312da700 true} {debug 1.0 0xc420100640 false} {debug 1.0 0xc4312da708 true} {web3 1.0 0xc4312da710 true} {eth 1.0 0xc4202b4520 true} {eth 1.0 0xc4202b4530 true} {eth 1.0 0xc431b8a060 true} {txpool 1.0 0xc4202b4540 true} {debug 1.0 0xc4202b4550 true} {debug 1.0 0xc4202b4560 false} {eth 1.0 0xc4312da718 true} {personal 1.0 0xc431b8a080 false} {clique 1.0 0xc431b8a0a0 false} {eth 1.0 0xc4312da720 true} {eth 1.0 0xc4312da728 true} {eth 1.0 0xc431b8a0c0 true} {miner 1.0 0xc4312da730 false} {eth 1.0 0xc431306a50 true} {admin 1.0 0xc4312da740 false} {debug 1.0 0xc4312da748 true} {debug 1.0 0xc4202b45b0 false} {net 1.0 0xc4202b44c0 true}]
+binhnt.node.node startRPC start startIPC
+binhnt.node.node startIPC  create new rpc server with apis =  [{admin 1.0 0xc4312da6f8 false} {admin 1.0 0xc4312da700 true} {debug 1.0 0xc420100640 false} {debug 1.0 0xc4312da708 true} {web3 1.0 0xc4312da710 true} {eth 1.0 0xc4202b4520 true} {eth 1.0 0xc4202b4530 true} {eth 1.0 0xc431b8a060 true} {txpool 1.0 0xc4202b4540 true} {debug 1.0 0xc4202b4550 true} {debug 1.0 0xc4202b4560 false} {eth 1.0 0xc4312da718 true} {personal 1.0 0xc431b8a080 false} {clique 1.0 0xc431b8a0a0 false} {eth 1.0 0xc4312da720 true} {eth 1.0 0xc4312da728 true} {eth 1.0 0xc431b8a0c0 true} {miner 1.0 0xc4312da730 false} {eth 1.0 0xc431306a50 true} {admin 1.0 0xc4312da740 false} {debug 1.0 0xc4312da748 true} {debug 1.0 0xc4202b45b0 false} {net 1.0 0xc4202b44c0 true}]
+binhnt.node.node startRPC start startHTTP
+binhnt.node.node startHTTP endpoint = 0.0.0.0:8502  apis =  [{admin 1.0 0xc4312da6f8 false} {admin 1.0 0xc4312da700 true} {debug 1.0 0xc420100640 false} {debug 1.0 0xc4312da708 true} {web3 1.0 0xc4312da710 true} {eth 1.0 0xc4202b4520 true} {eth 1.0 0xc4202b4530 true} {eth 1.0 0xc431b8a060 true} {txpool 1.0 0xc4202b4540 true} {debug 1.0 0xc4202b4550 true} {debug 1.0 0xc4202b4560 false} {eth 1.0 0xc4312da718 true} {personal 1.0 0xc431b8a080 false} {clique 1.0 0xc431b8a0a0 false} {eth 1.0 0xc4312da720 true} {eth 1.0 0xc4312da728 true} {eth 1.0 0xc431b8a0c0 true} {miner 1.0 0xc4312da730 false} {eth 1.0 0xc431306a50 true} {admin 1.0 0xc4312da740 false} {debug 1.0 0xc4312da748 true} {debug 1.0 0xc4202b45b0 false} {net 1.0 0xc4202b44c0 true}]
+binhnt.node.node startHTTP cors = [*]
+binhnt.rpc.endpoint StartHTTPEndpoint endpoint = 0.0.0.0:8502
+binhnt.rpc.endpoin.go StartHTTPEndpoint start thread NewHTTPServer
+binhnt.rpc.http NewHTTPServer  create handle to handler request
+binhnt.rpc.http newCorsHandler create http handler
+binhnt.rpc.http newVHostHandler  create virtualHostHandler
+binhnt.node.node startRPC start startWS
+binhnt.node.node startWS endpoint = 0.0.0.0:8542  apis =  [{admin 1.0 0xc4312da6f8 false} {admin 1.0 0xc4312da700 true} {debug 1.0 0xc420100640 false} {debug 1.0 0xc4312da708 true} {web3 1.0 0xc4312da710 true} {eth 1.0 0xc4202b4520 true} {eth 1.0 0xc4202b4530 true} {eth 1.0 0xc431b8a060 true} {txpool 1.0 0xc4202b4540 true} {debug 1.0 0xc4202b4550 true} {debug 1.0 0xc4202b4560 false} {eth 1.0 0xc4312da718 true} {personal 1.0 0xc431b8a080 false} {clique 1.0 0xc431b8a0a0 false} {eth 1.0 0xc4312da720 true} {eth 1.0 0xc4312da728 true} {eth 1.0 0xc431b8a0c0 true} {miner 1.0 0xc4312da730 false} {eth 1.0 0xc431306a50 true} {admin 1.0 0xc4312da740 false} {debug 1.0 0xc4312da748 true} {debug 1.0 0xc4202b45b0 false} {net 1.0 0xc4202b44c0 true}] modules =  [net web3 eth shh]
+binhnt.rpc.endpoint StartWSEndpoint endpoint 0.0.0.0:8542
+binhnt.rpc.endpoint StartWSEndpoint register namespace web3 &{0xc42041ea00}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420274d60}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420274d60}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420274d60 0xc4202b4510}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc4200f7e10}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc42033c9a0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc42033c9a0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420112340 0xc4200f54a0 0xc4312f2ae0 0xc4312f2b40}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420274d60 0xc4200f54a0 <nil> 0xc4201414a0 0xc431302280 {0 0} map[]}
+binhnt.rpc.endpoint StartWSEndpoint register namespace net &{0xc42041ec80 1112}
+binhnt.rpc.websocket.go NewWSServer http.Server [*]
+binhnt.utils.cmd utils.StartNode: create channel  sigc
+binhnt.geth.main start stack.Service
+binhnt.node.node: Service Lock and get element of service =   0xc4312da008
+binhnt.geth.main call ethereum.TxPool().SetGasPrice
+binhnt.geth.main call ethereum.StartMining(threads)
+binhnt.eth.backend StartMining  start mining with number of threads:  30
+binhnt.eth.backend ResetWithGenesisBlock  get Etherbase
+binhnt.miner.miner.go Miner.Start start mining
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192]
+binhnt.miner.miner.go Miner.Start start worker
+binhnt.miner.worker.go worker.start set running
+binhnt.miner.worker.go worker.newWorkLoop  Event from startCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.geth.main Create a chain state reader for self-derivation
+binhnt.node.node: Attach  Attach creates an RPC client attached to an in-process API handler.
+binhnt.node.node Attach call pc.DialInProc with n.inprocHandler
+binhnt.rpc.inproc.go Attach  DialInProc attaches an in-process connection to the given RPC server.
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.geth.main Create stateReader
+binhnt.geth.main Open any wallets already attached
+binhnt.account.manager Wallets create wallets
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt: start main [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
+binhnt: run with arguments [./bin/geth --port 30302 --rpcport 8502 --syncmode full --datadir node2/datadir --ws --wsaddr 0.0.0.0 --wsport 8542 --wsorigins=* --rpc --rpcaddr 0.0.0.0 --rpcapi personal,db,eth,net,web3,txpool,miner,network,debug,admin --networkid 1112 --gasprice 1000 --targetgaslimit 900000000000000000 --rpccorsdomain * --mine --minerthreads 30 --unlock 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --etherbase 0x2e5b167f68f04918d75f5a6f577a6ea6320225c0 --nat none --password passfile --nodiscover --netrestrict 103.126.156.0/24,172.101.0.0/24]
+binhnt.node.node: New: create new node
+binhnt.node.node New create account manager
+binhnt.node.config makeAccountManager start create account manager
+binhnt.node.config makeAccountManager backends= [0xc42019c780]
+binhnt.node.config makeAccountManager final backends= [0xc42019c780 0xc420126a00 0xc420126b40]
+binhnt.accounts.manager NewManager start new manager
+binhnt.accounts.manager NewManager add backend wallets
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Subscribe to backends:  backend.Subscribe
+binhnt.accounts.manager NewManager Assemble the account manager and return
+binhnt.accounts.manager NewManager backend &{0xc4202bfda0 0xc420352480 0xc4200e6b40 map[] [0xc42027d980] {{{0 0} 1} 0xc4200e6d20 0xc4200e6cc0 [{2 {0xddf460 0xc4200e6cc0 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019eae0 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc420278580:{}] false} true {{0 0} 0 0 0 0}}
+binhnt.accounts.manager NewManager backend &{ledger 11415 [0 1] 65440 0 0x9f5280 {13771155199263480668 51224467 0x1bc7b60} [] {{{0 0} 1} 0xc4200e6de0 0xc4200e6d80 [{2 {0xddf460 0xc4200e6d80 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019eae0 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc4202785a0:{}] false} true 0xc4200e6c00 {{0 0} 0 0 0 0} 0 {0 0}}
+binhnt.accounts.manager NewManager backend &{trezor 21324 [1] 65280 0 0x9f82d0 {13771155199263536581 51280352 0x1bc7b60} [] {{{0 0} 1} 0xc4200e6ea0 0xc4200e6e40 [{2 {0xddf460 0xc4200e6e40 18} {<nil> <nil> 0}}] {0 0} [{1 {0xddfee0 0xc42019eae0 18} {<nil> <nil> 0}}] 0xe89960 false} {{0 0} map[0xc4202785c0:{}] false} true 0xc4200e6c60 {{0 0} 0 0 0 0} 0 {0 0}}
+binhnt.accounts.manager NewManager start thread to update account manager
+binhnt.node.node New: create node
+binhnt.geth.main: startNode:  start node
+binhnt.geth.main: startNode call utils.StartNode(stack)
+binhnt.utils.cmd utils.StartNode: stack
+binhnt.node.node Start start node
+binhnt.node.node Start start p2p server:  Geth/v1.8.22-unstable-2b28b435/linux-amd64/go1.10.4
+binhnt.node.node Start  create service context
+binhnt.node.node.go Start construct and save service 
+binhnt.eth.backend New  start a ethereum with config =  &{<nil> 1112 full false map[] 0 100 false 524288 512 256 256 1h0m0s [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] [] [] 900000000000000000 8000000 1000 3s false {ethash 2 3 /root/.ethash 1 2 0} {[] false transactions.rlp 1h0m0s 1 10 16 4096 64 1024 3h0m0s} {20 60 <nil>} false    <nil>}
+binhnt.eth.backend New  create db object 
+binhnt.eth.backend CreateDB  try to open db
+binhnt.eth.backend New  call SetupGenesisBlockWithOverride 
+binhnt.eth.backend New  create new  ethereum chain
+binhnt.eth.backend CreateConsensusEngine  create consensus engin with chainConfig =  {1112 1 <nil> false 2 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] 3 3 4 5 <nil> ethash clique} ethash.Config =  {ethash 2 3 /root/.ethash 1 2 0}
+binhnt.eth.backend New Initialising Ethereum protocol versions [63 62] network 1112
+binhnt.eth.backend New call rawdb.ReadDatabaseVersion to chainDb
+binhnt.eth.backend New write chainDb to version =  3
+binhnt.eth.backend New  initial vm.Config
+binhnt.eth.backend New  setup eth.blockchain with  core.NewBlockChain(chainD...)
+binhnt.core.block_validator NewBlockValidator start create block validator
+binhnt.core.state_processor NewStateProcessor 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.eth.backend New  check and rewrite the chain 
+binhnt.eth.backend New  start 	eth.bloomIndexer
+binhnt.core.chain_indexer ChainIndexer.Start  start 	channel and subcribe to chain and call event loop 
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.eth.backend New  create new transaction pool with config and eth.chainConfig and blockchain
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.chain_indexer ChainIndexer.eventLoop  start  event loop 
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.eth.backend New  create protocol manager
+binhnt.eth.backend New  create miner
+binhnt.miner.miner.go New Create new miner and run update
+binhnt.miner.worker.go newWorker create a worker
+binhnt.core.blockchain BlockChain.SubscribeChainHeadEvent  subscribe change events header
+binhnt.core.blockchain BlockChain.SubscribeChainSideEvent  subscribe chainside events
+binhnt.miner.worker.go newWorker start mainloop
+binhnt.miner.worker.go newWorker start newWorkLoop
+binhnt.miner.worker.go newWorker start resultLoop
+binhnt.miner.worker.go newWorker start taskLoop
+binhnt.eth.backend makeExtraData  call makeExtraData
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [216 131 1 8 22 132 103 101 116 104 136 103 111 49 46 49 48 46 52 133 108 105 110 117 120]
+binhnt.eth.backend New  setup APIBackend
+binhnt.eth.backend New  setup APIBackend.gpo = gasprice.NewOracle
+binhnt.eth.gasprice.gasprice NewOracle create new oracle in order to estimate gasprice
+binhnt.eth.backend New  return ethereum pointer
+binhnt.miner.worker.go worker.newWorkLoop  submit new mining work upon received events
+binhnt.miner.worker.go worker.newWorkLoop start timer with recommit:  3s
+binhnt.node.node.go Start Add service  &{0xc42034d400 0xc42027e180 0xc420280300 0xc4202e5a40 0xc430e00000 0xc420285790 <nil> 0xc420140420 0xc42026efc0 0xc4202e08c0 0xc420285860 0xc420280360 0xc420152300 0xc420328620 0xc4200cf800 0xc420334440 [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] 1112 <nil> {{0 0} 0 0 0 0}} type:  *eth.Ethereum  to queues
+binhnt.eth.backend Protocols  get list p2p.Protocol
+binhnt.miner.worker.go worker.mainLoop  regenerate the sealing task based on the received event
+binhnt.miner.worker.go worker.resultLoop  to handle sealing result submitting and flush relative data to the database.
+binhnt.node.node Start running.Protocols  [{eth 63 17 0xae99c0 0xae9bf0 0xae9c50 []} {eth 62 8 0xae99c0 0xae9bf0 0xae9c50 []}]
+binhnt.eth.backend Protocols  get list p2p.Protocol
+binhnt.miner.worker.go worker.taskLoop  fetch sealing task from the generator and push them to consensus engine 
+binhnt.node.node Start Call  running.Start()
+binhnt.p2pserver Server.Start() Start running
+binhnt.p2pserver Server.Start() Create event channels
+binhnt.p2pserver Server.Start() setup local node
+binhnt.miner.worker.go worker.newWorkLoop  define commit function
+binhnt.miner.worker.go worker.newWorkLoop  define recalcRecommit function
+binhnt.miner.worker.go worker.newWorkLoop  define clearPending function
+binhnt.miner.worker.go worker.newWorkLoop  start loop and listening event
+binhnt.miner.worker.go worker.newWorkLoop  Event from startCh -> call commit function
+binhnt.miner.miner.go update  Start subcribe to  downloader.StartEvent
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.p2pserver Server.Start() setup Listening
+binhnt.p2pserver Server.Start() setup discovery
+binhnt.p2pserver Server.Start() Create new newDialState
+binhnt.p2pserver Server.Start() Create thread run dialer 
+binhnt.node.node: Start start service =  &{0xc42034d400 0xc42027e180 0xc420280300 0xc4202e5a40 0xc430e00000 0xc420285790 <nil> 0xc420140420 0xc42026efc0 0xc4202e08c0 0xc420285860 0xc420280360 0xc420152300 0xc420328620 0xc4200cf800 0xc420334440 [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192] 1112 <nil> {{0 0} 0 0 0 0}}  with kind =  *eth.Ethereum
+binhnt.eth.backend Start  start Ethereum backend with p2p.Server
+binhnt.eth.backend Start  call startBloomHandlers
+binhnt.eth.backend Start  Start the RPC service with ethapi.NewPublicNetAPI 
+binhnt.internal.ethapi.api NewPublicNetAPI  call PublicNetAPI
+binhnt.node.node: Node.Start: append kind =  *eth.Ethereum  to started list
+binhnt.node.node.go: Node.Start:  Start the configured RPC interfaces
+binhnt.node.node startRPC services =  map[*eth.Ethereum:0xc4203369a0]
+binhnt.eth.backend APIs  call ethapi.GetAPIs
+binhnt.internal.ethapi.backend GetAPIs  get list of rpc apis of backend
+binhnt.internal.ethapi.api NewPublicEthereumAPI create new PublicEthereumAPI
+binhnt.internal.ethapi.api NewPublicBlockChainAPI create new PublicBlockChainAPI
+binhnt.internal.ethapi.api NewPublicTransactionPoolAPI create new PublicTransactionPoolAPI
+binhnt.internal.ethapi.api NewPublicTxPoolAPI create new PublicTxPoolAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.internal.ethapi.api NewPublicAccountAPI  create new  PublicAccountAPI
+binhnt.internal.ethapi.api NewPrivateAccountAPI  create new PrivateAccountAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.eth.api NewPublicEthereumAPI create new PublicEthereumAPI for an Ethereum network
+binhnt.eth.api NewPublicMinerAPI  create new PublicMinerAPI for an ethererum 
+binhnt.eth.api NewPrivateMinerAPI  create new PrivateMinerAPI for an ethererum 
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.ChainDb  get ChainDb
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.SubscribeNewTxsEvent  get SubscribeNewTxsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeLogsEvent  get SubscribeLogsEvent
+binhnt.core.blockchain BlockChain.SubscribeLogsEvent  subscribe log events
+binhnt.eth.api_backend EthAPIBackend.SubscribeRemovedLogsEvent  get SubscribeRemovedLogsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeChainEvent  get SubscribeChainEvent
+binhnt.core.blockchain BlockChain.SubscribeChainEvent  subscribe change events
+binhnt.eth.api NewPrivateAdminAPI  create new PrivateAdminAPI 
+binhnt.eth.api NewPublicDebugAPI.ImportChain  create new PublicDebugAPI
+binhnt.eth.backend APIs  call ethapi.GetAPIs
+binhnt.internal.ethapi.backend GetAPIs  get list of rpc apis of backend
+binhnt.internal.ethapi.api NewPublicEthereumAPI create new PublicEthereumAPI
+binhnt.internal.ethapi.api NewPublicBlockChainAPI create new PublicBlockChainAPI
+binhnt.internal.ethapi.api NewPublicTransactionPoolAPI create new PublicTransactionPoolAPI
+binhnt.internal.ethapi.api NewPublicTxPoolAPI create new PublicTxPoolAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.internal.ethapi.api NewPublicAccountAPI  create new  PublicAccountAPI
+binhnt.internal.ethapi.api NewPrivateAccountAPI  create new PrivateAccountAPI
+binhnt.eth.api_backend EthAPIBackend.AccountManager  get AccountManager
+binhnt.eth.api NewPublicEthereumAPI create new PublicEthereumAPI for an Ethereum network
+binhnt.eth.api NewPublicMinerAPI  create new PublicMinerAPI for an ethererum 
+binhnt.eth.api NewPrivateMinerAPI  create new PrivateMinerAPI for an ethererum 
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.ChainDb  get ChainDb
+binhnt.eth.api_backend EthAPIBackend.EventMux  get EventMux
+binhnt.eth.api_backend EthAPIBackend.SubscribeNewTxsEvent  get SubscribeNewTxsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeLogsEvent  get SubscribeLogsEvent
+binhnt.core.blockchain BlockChain.SubscribeLogsEvent  subscribe log events
+binhnt.eth.api_backend EthAPIBackend.SubscribeRemovedLogsEvent  get SubscribeRemovedLogsEvent
+binhnt.eth.api_backend EthAPIBackend.SubscribeChainEvent  get SubscribeChainEvent
+binhnt.core.blockchain BlockChain.SubscribeChainEvent  subscribe change events
+binhnt.eth.api NewPrivateAdminAPI  create new PrivateAdminAPI 
+binhnt.eth.api NewPublicDebugAPI.ImportChain  create new PublicDebugAPI
+binhnt.node.node startRPC append service  [{eth 1.0 0xc4203f32a0 true} {eth 1.0 0xc4203f32b0 true} {eth 1.0 0xc430e963a0 true} {txpool 1.0 0xc4203f32c0 true} {debug 1.0 0xc4203f32d0 true} {debug 1.0 0xc4203f32e0 false} {eth 1.0 0xc430ea00d8 true} {personal 1.0 0xc430e963c0 false} {clique 1.0 0xc430e963e0 false} {eth 1.0 0xc430ea00e0 true} {eth 1.0 0xc430ea00e8 true} {eth 1.0 0xc430e96400 true} {miner 1.0 0xc430ea00f0 false} {eth 1.0 0xc430ea2500 true} {admin 1.0 0xc430ea00f8 false} {debug 1.0 0xc430ea0100 true} {debug 1.0 0xc4203f3340 false} {net 1.0 0xc4203f3190 true}]
+binhnt.node.node startRPC start startInProc
+binhnt.node.node startInProc  create new rpc server with apis =  [{admin 1.0 0xc430ea0080 false} {admin 1.0 0xc430ea0088 true} {debug 1.0 0xc420288690 false} {debug 1.0 0xc430ea0090 true} {web3 1.0 0xc430ea0098 true} {eth 1.0 0xc4203f31f0 true} {eth 1.0 0xc4203f3200 true} {eth 1.0 0xc430e96280 true} {txpool 1.0 0xc4203f3210 true} {debug 1.0 0xc4203f3220 true} {debug 1.0 0xc4203f3230 false} {eth 1.0 0xc430ea00a0 true} {personal 1.0 0xc430e962a0 false} {clique 1.0 0xc430e962c0 false} {eth 1.0 0xc430ea00a8 true} {eth 1.0 0xc430ea00b0 true} {eth 1.0 0xc430e962e0 true} {miner 1.0 0xc430ea00b8 false} {eth 1.0 0xc430ea24b0 true} {admin 1.0 0xc430ea00c8 false} {debug 1.0 0xc430ea00d0 true} {debug 1.0 0xc4203f3280 false} {net 1.0 0xc4203f3190 true}]
+binhnt.node.node startRPC start startIPC
+binhnt.node.node startIPC  create new rpc server with apis =  [{admin 1.0 0xc430ea0080 false} {admin 1.0 0xc430ea0088 true} {debug 1.0 0xc420288690 false} {debug 1.0 0xc430ea0090 true} {web3 1.0 0xc430ea0098 true} {eth 1.0 0xc4203f31f0 true} {eth 1.0 0xc4203f3200 true} {eth 1.0 0xc430e96280 true} {txpool 1.0 0xc4203f3210 true} {debug 1.0 0xc4203f3220 true} {debug 1.0 0xc4203f3230 false} {eth 1.0 0xc430ea00a0 true} {personal 1.0 0xc430e962a0 false} {clique 1.0 0xc430e962c0 false} {eth 1.0 0xc430ea00a8 true} {eth 1.0 0xc430ea00b0 true} {eth 1.0 0xc430e962e0 true} {miner 1.0 0xc430ea00b8 false} {eth 1.0 0xc430ea24b0 true} {admin 1.0 0xc430ea00c8 false} {debug 1.0 0xc430ea00d0 true} {debug 1.0 0xc4203f3280 false} {net 1.0 0xc4203f3190 true}]
+binhnt.node.node startRPC start startHTTP
+binhnt.node.node startHTTP endpoint = 0.0.0.0:8502  apis =  [{admin 1.0 0xc430ea0080 false} {admin 1.0 0xc430ea0088 true} {debug 1.0 0xc420288690 false} {debug 1.0 0xc430ea0090 true} {web3 1.0 0xc430ea0098 true} {eth 1.0 0xc4203f31f0 true} {eth 1.0 0xc4203f3200 true} {eth 1.0 0xc430e96280 true} {txpool 1.0 0xc4203f3210 true} {debug 1.0 0xc4203f3220 true} {debug 1.0 0xc4203f3230 false} {eth 1.0 0xc430ea00a0 true} {personal 1.0 0xc430e962a0 false} {clique 1.0 0xc430e962c0 false} {eth 1.0 0xc430ea00a8 true} {eth 1.0 0xc430ea00b0 true} {eth 1.0 0xc430e962e0 true} {miner 1.0 0xc430ea00b8 false} {eth 1.0 0xc430ea24b0 true} {admin 1.0 0xc430ea00c8 false} {debug 1.0 0xc430ea00d0 true} {debug 1.0 0xc4203f3280 false} {net 1.0 0xc4203f3190 true}]
+binhnt.node.node startHTTP cors = [*]
+binhnt.rpc.endpoint StartHTTPEndpoint endpoint = 0.0.0.0:8502
+binhnt.rpc.endpoin.go StartHTTPEndpoint start thread NewHTTPServer
+binhnt.rpc.http NewHTTPServer  create handle to handler request
+binhnt.rpc.http newCorsHandler create http handler
+binhnt.rpc.http newVHostHandler  create virtualHostHandler
+binhnt.node.node startRPC start startWS
+binhnt.node.node startWS endpoint = 0.0.0.0:8542  apis =  [{admin 1.0 0xc430ea0080 false} {admin 1.0 0xc430ea0088 true} {debug 1.0 0xc420288690 false} {debug 1.0 0xc430ea0090 true} {web3 1.0 0xc430ea0098 true} {eth 1.0 0xc4203f31f0 true} {eth 1.0 0xc4203f3200 true} {eth 1.0 0xc430e96280 true} {txpool 1.0 0xc4203f3210 true} {debug 1.0 0xc4203f3220 true} {debug 1.0 0xc4203f3230 false} {eth 1.0 0xc430ea00a0 true} {personal 1.0 0xc430e962a0 false} {clique 1.0 0xc430e962c0 false} {eth 1.0 0xc430ea00a8 true} {eth 1.0 0xc430ea00b0 true} {eth 1.0 0xc430e962e0 true} {miner 1.0 0xc430ea00b8 false} {eth 1.0 0xc430ea24b0 true} {admin 1.0 0xc430ea00c8 false} {debug 1.0 0xc430ea00d0 true} {debug 1.0 0xc4203f3280 false} {net 1.0 0xc4203f3190 true}] modules =  [net web3 eth shh]
+binhnt.rpc.endpoint StartWSEndpoint endpoint 0.0.0.0:8542
+binhnt.rpc.endpoint StartWSEndpoint register namespace web3 &{0xc42034a000}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420328620}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420328620}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420328620 0xc4203f31e0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420285860}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc4203369a0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc4203369a0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420112340 0xc42026efc0 0xc430e94960 0xc430e949c0}
+binhnt.rpc.endpoint StartWSEndpoint register namespace eth &{0xc420328620 0xc42026efc0 <nil> 0xc420140420 0xc430ece1e0 {0 0} map[]}
+binhnt.rpc.endpoint StartWSEndpoint register namespace net &{0xc42034a280 1112}
+binhnt.rpc.websocket.go NewWSServer http.Server [*]
+binhnt.utils.cmd utils.StartNode: create channel  sigc
+binhnt.geth.main start stack.Service
+binhnt.node.node: Service Lock and get element of service =   0xc4313d0010
+binhnt.geth.main call ethereum.TxPool().SetGasPrice
+binhnt.geth.main call ethereum.StartMining(threads)
+binhnt.eth.backend StartMining  start mining with number of threads:  30
+binhnt.eth.backend ResetWithGenesisBlock  get Etherbase
+binhnt.miner.miner.go Miner.Start start mining
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192]
+binhnt.miner.miner.go Miner.Start start worker
+binhnt.miner.worker.go worker.start set running
+binhnt.miner.worker.go worker.newWorkLoop  Event from startCh -> call commit function
+binhnt.geth.main Create a chain state reader for self-derivation
+binhnt.node.node: Attach  Attach creates an RPC client attached to an in-process API handler.
+binhnt.node.node Attach call pc.DialInProc with n.inprocHandler
+binhnt.rpc.inproc.go Attach  DialInProc attaches an in-process connection to the given RPC server.
+binhnt.geth.main Create stateReader
+binhnt.geth.main Open any wallets already attached
+binhnt.account.manager Wallets create wallets
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4203525a0 [78 11 134 122 165 150 209 240 206 81 152 14 150 82 236 231 14 27 231 1 203 255 164 126 214 26 17 4 234 15 207 30] []} {0xc4203525a0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4203525a0 [78 11 134 122 165 150 209 240 206 81 152 14 150 82 236 231 14 27 231 1 203 255 164 126 214 26 17 4 234 15 207 30] []}
+binhnt.event.feed Feed.Send send value {0xc4203525a0 [78 11 134 122 165 150 209 240 206 81 152 14 150 82 236 231 14 27 231 1 203 255 164 126 214 26 17 4 234 15 207 30] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4203525a0}
+binhnt.event.feed Feed.Send send value {0xc4203525a0}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.event.feed Feed.Send send value &{add fdb1f815c8b8a87a980d096e8029e65f8e0862a26733aeb6c397ca2f57203bac   <nil> <nil>}
+binhnt.event.feed Feed.Send send value &{fdb1f815c8b8a87a 0 0 0 0 0 0 0 0 20000000000 {0 0 <nil>} {0 0 <nil>} {0 0 <nil>} {0 0 <nil>} map[] 0xc43133c180 63 0xc430e68740 {{0 0} 0 0 0 0}}
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.miner.go update Check event.Data.type
+binhnt.miner.miner.go update Start downloader event. Stop mining
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.event.feed Feed.Send send value {0xc4203525a0}
+binhnt.miner.worker.go worker.mainLoop  event from chainSideCh 
+binhnt.miner.worker.go worker.mainLoop  event from chainSideCh 
+binhnt.eth.backend ResetWithGenesisBlock  check isLocalBlock
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8480 [81 131 91 1 217 53 143 122 128 224 237 245 246 45 37 212 168 7 232 95 183 209 144 204 178 10 245 88 71 138 95 201] []} {0xc430ee8480}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8480 [81 131 91 1 217 53 143 122 128 224 237 245 246 45 37 212 168 7 232 95 183 209 144 204 178 10 245 88 71 138 95 201] []}
+binhnt.event.feed Feed.Send send value {0xc430ee8480 [81 131 91 1 217 53 143 122 128 224 237 245 246 45 37 212 168 7 232 95 183 209 144 204 178 10 245 88 71 138 95 201] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8480}
+binhnt.event.feed Feed.Send send value {0xc430ee8480}
+binhnt.miner.miner.go update Check event.Data.type
+binhnt.miner.miner.go update Start downloader event (done or failed). Check to start or not
+binhnt.miner.miner.go update start mining thread
+binhnt.miner.miner.go Miner.Start start mining
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [46 91 22 127 104 240 73 24 215 95 90 111 87 122 110 166 50 2 37 192]
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.miner.go Miner.Start start worker
+binhnt.miner.worker.go worker.start set running
+binhnt.miner.worker.go worker.newWorkLoop  Event from startCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc431430990 [120 165 137 247 91 111 136 44 199 20 50 108 50 34 153 37 50 32 236 205 120 184 33 174 192 247 130 192 191 231 102 57] []} {0xc431430990}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc431430990 [120 165 137 247 91 111 136 44 199 20 50 108 50 34 153 37 50 32 236 205 120 184 33 174 192 247 130 192 191 231 102 57] []}
+binhnt.event.feed Feed.Send send value {0xc431430990 [120 165 137 247 91 111 136 44 199 20 50 108 50 34 153 37 50 32 236 205 120 184 33 174 192 247 130 192 191 231 102 57] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc431430990}
+binhnt.event.feed Feed.Send send value {0xc431430990}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   [[255 188 212 129 193 51 14 24 8 121 180 210 185 181 6 66 238 164 60 2]]
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.event.feed Feed.Send send value {[0xc420352630]}
+binhnt.miner.worker.go worker.mainLoop  event from txsCh 
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commitTransactions  commitTransactioncommitTransaction start.
+binhnt.miner.worker.go worker.commitTransaction  commitTransactioncommitTransaction start.
+binhnt.miner.worker.go worker.commitTransaction  call snapshot
+binhnt.core.state.statedb StateDB.Copy  create new snapshot
+binhnt.miner.worker.go worker.commitTransaction  call   core.ApplyTransaction
+binhnt.core.state_processor ApplyTransaction   attempts to apply a transaction to the given state database   and uses the input parameters for its environment. It returns the receipt
+binhnt.core.state_processor ApplyTransaction   Create a new context to be used in the EVM environment 
+binhnt.core.evm NewEVMContext create new evm context
+binhnt.core.state_processor ApplyTransaction   Create a new environment which holds all relevant information 
+binhnt.core.vm.evm NewEVM  Create new EVM. The returned EVM is not thread safe and should only ever be used *once*.
+binhnt.core.state_processor ApplyTransaction    Apply the transaction to the current state (included in the env) 
+binhnt.core.state_transition ApplyMessage   create new state transition
+binhnt.core.state_transition ApplyMessage   create new state transition
+binhnt.core.state_transition StateTransition.TransitionDb()  process the transaction. Call  StateTransition.preCheck()
+binhnt.core.state_transition StateTransition.preCheck()  get error
+binhnt.core.state_transition StateTransition.buyGas()  test gas of from address
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition StateTransition.TransitionDb()  setup message, sender, homstead and contractCreation
+binhnt.core.state_transition StateTransition.TransitionDb()  get  Pay intrinsic gas
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.state_transition StateTransition.useGas()   change the gas used.
+binhnt.core.state_transition StateTransition.TransitionDb()  Check type of message, base on contractCreation
+binhnt.core.state_transition StateTransition.TransitionDb()  process contract message
+binhnt.core.vm.evm EVM.Create Create a contract address
+binhnt.core.vm.evm EVM.Create Create evem with code
+binhnt.core.vm.evm EVM.create create creates a new contract using code as deployment code.
+binhnt.core.vm.evm EVM.create check the limit.
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.vm.evm EVM.create create nonce.
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.vm.evm EVM.create Create a new account on the state
+binhnt.core.state.statedb StateDB.Copy  create new snapshot
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.vm.evm EVM.create initialise a new contract and set the code that is to be used by the EVM
+binhnt.core.vm.evm EVM.create run the contract code
+binhnt.core.vm.evm run  run code.
+binhnt.core.vm.evm run  try run code with each of interpreters
+binhnt.core.state.statedb StateDB.AddLog  add log to journal
+binhnt.core.vm.evm EVM.create check whether the max code size has been exceeded
+binhnt.core.state_transition StateTransition.TransitionDb()  call st.refundGas()
+binhnt.core.state_transition StateTransition.TransitionDb()  add balance for coinbase
+binhnt.core.state_processor ApplyTransaction    Update the state with pending changes
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state_processor ApplyTransaction   Create a new receipt for the transaction, storing the intermediate root and gas used by the tx based on the eip phase, we're passing whether the root touch-delete accounts
+binhnt.core.state.statedb StateDB.GetLogs  get logs
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from resubmitAdjustCh -> call commit function
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.state_processor ApplyTransaction   attempts to apply a transaction to the given state database   and uses the input parameters for its environment. It returns the receipt
+binhnt.core.state_processor ApplyTransaction   Create a new context to be used in the EVM environment 
+binhnt.core.evm NewEVMContext create new evm context
+binhnt.core.state_processor ApplyTransaction   Create a new environment which holds all relevant information 
+binhnt.core.vm.evm NewEVM  Create new EVM. The returned EVM is not thread safe and should only ever be used *once*.
+binhnt.core.state_processor ApplyTransaction    Apply the transaction to the current state (included in the env) 
+binhnt.core.state_transition ApplyMessage   create new state transition
+binhnt.core.state_transition ApplyMessage   create new state transition
+binhnt.core.state_transition StateTransition.TransitionDb()  process the transaction. Call  StateTransition.preCheck()
+binhnt.core.state_transition StateTransition.preCheck()  get error
+binhnt.core.state_transition StateTransition.buyGas()  test gas of from address
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.state_transition StateTransition.TransitionDb()  setup message, sender, homstead and contractCreation
+binhnt.core.state_transition StateTransition.TransitionDb()  get  Pay intrinsic gas
+binhnt.core.state_transition IntrinsicGas    IntrinsicGas computes the 'intrinsic gas' for a message with the given data
+binhnt.core.state_transition StateTransition.useGas()   change the gas used.
+binhnt.core.state_transition StateTransition.TransitionDb()  Check type of message, base on contractCreation
+binhnt.core.state_transition StateTransition.TransitionDb()  process contract message
+binhnt.core.vm.evm EVM.Create Create a contract address
+binhnt.core.vm.evm EVM.Create Create evem with code
+binhnt.core.vm.evm EVM.create create creates a new contract using code as deployment code.
+binhnt.core.vm.evm EVM.create check the limit.
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.vm.evm EVM.create create nonce.
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.vm.evm EVM.create Create a new account on the state
+binhnt.core.state.statedb StateDB.Copy  create new snapshot
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.vm.evm EVM.create initialise a new contract and set the code that is to be used by the EVM
+binhnt.core.vm.evm EVM.create run the contract code
+binhnt.core.vm.evm run  run code.
+binhnt.core.vm.evm run  try run code with each of interpreters
+binhnt.core.state.statedb StateDB.AddLog  add log to journal
+binhnt.core.vm.evm EVM.create check whether the max code size has been exceeded
+binhnt.core.state_transition StateTransition.TransitionDb()  call st.refundGas()
+binhnt.core.state_transition StateTransition.TransitionDb()  add balance for coinbase
+binhnt.core.state_processor ApplyTransaction    Update the state with pending changes
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state_processor ApplyTransaction   Create a new receipt for the transaction, storing the intermediate root and gas used by the tx based on the eip phase, we're passing whether the root touch-delete accounts
+binhnt.core.state.statedb StateDB.GetLogs  get logs
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.setError  set error
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8630 [243 235 154 250 90 154 118 155 43 51 158 165 6 226 149 9 89 76 210 9 248 111 170 34 55 153 62 130 26 245 127 173] [0xc441614000]} {0xc430ee8630}]  logs =  [0xc441614000]
+binhnt.core.blockchain BlockChain.PostChainEvents  send logsFeed  [0xc441614000]
+binhnt.event.feed Feed.Send send value [0xc441614000]
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8630 [243 235 154 250 90 154 118 155 43 51 158 165 6 226 149 9 89 76 210 9 248 111 170 34 55 153 62 130 26 245 127 173] [0xc441614000]}
+binhnt.event.feed Feed.Send send value {0xc430ee8630 [243 235 154 250 90 154 118 155 43 51 158 165 6 226 149 9 89 76 210 9 248 111 170 34 55 153 62 130 26 245 127 173] [0xc441614000]}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8630}
+binhnt.event.feed Feed.Send send value {0xc430ee8630}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.GetBalance  get balance
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8870 [46 163 162 252 194 191 255 184 72 36 222 175 133 120 255 11 64 111 252 85 48 173 255 35 230 52 97 57 207 31 128 2] []} {0xc430ee8870}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8870 [46 163 162 252 194 191 255 184 72 36 222 175 133 120 255 11 64 111 252 85 48 173 255 35 230 52 97 57 207 31 128 2] []}
+binhnt.event.feed Feed.Send send value {0xc430ee8870 [46 163 162 252 194 191 255 184 72 36 222 175 133 120 255 11 64 111 252 85 48 173 255 35 230 52 97 57 207 31 128 2] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8870}
+binhnt.event.feed Feed.Send send value {0xc430ee8870}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8900 [241 135 128 59 35 7 191 152 174 231 226 108 64 60 77 151 25 38 92 26 149 159 131 248 170 4 112 146 90 34 167 62] []} {0xc430ee8900}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8900 [241 135 128 59 35 7 191 152 174 231 226 108 64 60 77 151 25 38 92 26 149 159 131 248 170 4 112 146 90 34 167 62] []}
+binhnt.event.feed Feed.Send send value {0xc430ee8900 [241 135 128 59 35 7 191 152 174 231 226 108 64 60 77 151 25 38 92 26 149 159 131 248 170 4 112 146 90 34 167 62] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8900}
+binhnt.event.feed Feed.Send send value {0xc430ee8900}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8a20 [181 125 215 128 137 150 109 83 117 97 59 137 125 151 119 1 72 110 244 235 14 255 188 87 101 229 32 228 125 200 70 62] []} {0xc430ee8a20}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8a20 [181 125 215 128 137 150 109 83 117 97 59 137 125 151 119 1 72 110 244 235 14 255 188 87 101 229 32 228 125 200 70 62] []}
+binhnt.event.feed Feed.Send send value {0xc430ee8a20 [181 125 215 128 137 150 109 83 117 97 59 137 125 151 119 1 72 110 244 235 14 255 188 87 101 229 32 228 125 200 70 62] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8a20}
+binhnt.event.feed Feed.Send send value {0xc430ee8a20}
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc431441170 [4 185 232 168 213 131 83 172 140 54 203 21 170 49 82 49 122 137 211 253 5 102 210 181 54 189 143 63 42 75 175 87] []} {0xc431441170}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc431441170 [4 185 232 168 213 131 83 172 140 54 203 21 170 49 82 49 122 137 211 253 5 102 210 181 54 189 143 63 42 75 175 87] []}
+binhnt.event.feed Feed.Send send value {0xc431441170 [4 185 232 168 213 131 83 172 140 54 203 21 170 49 82 49 122 137 211 253 5 102 210 181 54 189 143 63 42 75 175 87] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc431441170}
+binhnt.event.feed Feed.Send send value {0xc431441170}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc431431ef0 [224 178 134 182 48 238 71 163 216 199 130 170 220 46 142 230 221 217 71 203 123 248 203 44 74 103 23 153 167 211 233 90] []} {0xc431431ef0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc431431ef0 [224 178 134 182 48 238 71 163 216 199 130 170 220 46 142 230 221 217 71 203 123 248 203 44 74 103 23 153 167 211 233 90] []}
+binhnt.event.feed Feed.Send send value {0xc431431ef0 [224 178 134 182 48 238 71 163 216 199 130 170 220 46 142 230 221 217 71 203 123 248 203 44 74 103 23 153 167 211 233 90] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc431431ef0}
+binhnt.event.feed Feed.Send send value {0xc431431ef0}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc431441680 [134 115 165 190 224 155 175 9 10 52 82 212 110 4 234 193 84 125 16 66 153 5 40 205 216 138 126 162 124 192 208 193] []} {0xc431441680}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc431441680 [134 115 165 190 224 155 175 9 10 52 82 212 110 4 234 193 84 125 16 66 153 5 40 205 216 138 126 162 124 192 208 193] []}
+binhnt.event.feed Feed.Send send value {0xc431441680 [134 115 165 190 224 155 175 9 10 52 82 212 110 4 234 193 84 125 16 66 153 5 40 205 216 138 126 162 124 192 208 193] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc431441680}
+binhnt.event.feed Feed.Send send value {0xc431441680}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4314417a0 [54 160 198 141 231 45 16 120 165 135 158 59 171 204 119 241 23 239 169 239 88 195 112 198 85 78 138 35 242 104 91 252] []} {0xc4314417a0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4314417a0 [54 160 198 141 231 45 16 120 165 135 158 59 171 204 119 241 23 239 169 239 88 195 112 198 85 78 138 35 242 104 91 252] []}
+binhnt.event.feed Feed.Send send value {0xc4314417a0 [54 160 198 141 231 45 16 120 165 135 158 59 171 204 119 241 23 239 169 239 88 195 112 198 85 78 138 35 242 104 91 252] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4314417a0}
+binhnt.event.feed Feed.Send send value {0xc4314417a0}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee8ea0 [132 32 97 5 70 104 239 163 221 75 235 66 11 38 173 11 66 224 149 217 105 213 153 161 86 114 157 202 69 171 92 238] []} {0xc430ee8ea0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee8ea0 [132 32 97 5 70 104 239 163 221 75 235 66 11 38 173 11 66 224 149 217 105 213 153 161 86 114 157 202 69 171 92 238] []}
+binhnt.event.feed Feed.Send send value {0xc430ee8ea0 [132 32 97 5 70 104 239 163 221 75 235 66 11 38 173 11 66 224 149 217 105 213 153 161 86 114 157 202 69 171 92 238] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee8ea0}
+binhnt.event.feed Feed.Send send value {0xc430ee8ea0}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4416d6090 [248 39 139 136 6 145 233 213 32 42 16 157 136 32 27 49 143 66 10 88 142 97 140 68 128 115 54 226 13 183 237 145] []} {0xc4416d6090}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4416d6090 [248 39 139 136 6 145 233 213 32 42 16 157 136 32 27 49 143 66 10 88 142 97 140 68 128 115 54 226 13 183 237 145] []}
+binhnt.event.feed Feed.Send send value {0xc4416d6090 [248 39 139 136 6 145 233 213 32 42 16 157 136 32 27 49 143 66 10 88 142 97 140 68 128 115 54 226 13 183 237 145] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4416d6090}
+binhnt.event.feed Feed.Send send value {0xc4416d6090}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc430ee93b0 [16 41 252 130 231 236 17 248 167 5 98 150 26 141 215 207 110 131 138 123 81 6 77 35 24 148 59 147 38 208 43 222] []} {0xc430ee93b0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc430ee93b0 [16 41 252 130 231 236 17 248 167 5 98 150 26 141 215 207 110 131 138 123 81 6 77 35 24 148 59 147 38 208 43 222] []}
+binhnt.event.feed Feed.Send send value {0xc430ee93b0 [16 41 252 130 231 236 17 248 167 5 98 150 26 141 215 207 110 131 138 123 81 6 77 35 24 148 59 147 38 208 43 222] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc430ee93b0}
+binhnt.event.feed Feed.Send send value {0xc430ee93b0}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc441516510 [149 98 26 129 17 177 196 2 154 66 41 241 163 73 171 200 135 104 153 17 104 15 73 49 235 35 9 196 139 36 12 121] []} {0xc441516510}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc441516510 [149 98 26 129 17 177 196 2 154 66 41 241 163 73 171 200 135 104 153 17 104 15 73 49 235 35 9 196 139 36 12 121] []}
+binhnt.event.feed Feed.Send send value {0xc441516510 [149 98 26 129 17 177 196 2 154 66 41 241 163 73 171 200 135 104 153 17 104 15 73 49 235 35 9 196 139 36 12 121] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc441516510}
+binhnt.event.feed Feed.Send send value {0xc441516510}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4415165a0 [54 188 61 162 42 118 72 203 27 191 28 14 115 136 214 18 230 164 110 42 138 228 125 201 120 224 195 196 11 193 253 114] []} {0xc4415165a0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4415165a0 [54 188 61 162 42 118 72 203 27 191 28 14 115 136 214 18 230 164 110 42 138 228 125 201 120 224 195 196 11 193 253 114] []}
+binhnt.event.feed Feed.Send send value {0xc4415165a0 [54 188 61 162 42 118 72 203 27 191 28 14 115 136 214 18 230 164 110 42 138 228 125 201 120 224 195 196 11 193 253 114] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4415165a0}
+binhnt.event.feed Feed.Send send value {0xc4415165a0}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc420352900 [59 201 75 175 255 38 19 37 172 192 48 111 107 146 246 126 67 46 232 107 19 217 195 98 98 59 91 20 36 19 31 221] []} {0xc420352900}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc420352900 [59 201 75 175 255 38 19 37 172 192 48 111 107 146 246 126 67 46 232 107 19 217 195 98 98 59 91 20 36 19 31 221] []}
+binhnt.event.feed Feed.Send send value {0xc420352900 [59 201 75 175 255 38 19 37 172 192 48 111 107 146 246 126 67 46 232 107 19 217 195 98 98 59 91 20 36 19 31 221] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc420352900}
+binhnt.event.feed Feed.Send send value {0xc420352900}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4416d6120 [247 61 49 32 119 10 34 16 154 29 213 5 121 61 212 120 248 214 199 46 223 226 96 216 30 53 37 121 137 221 227 246] []} {0xc4416d6120}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4416d6120 [247 61 49 32 119 10 34 16 154 29 213 5 121 61 212 120 248 214 199 46 223 226 96 216 30 53 37 121 137 221 227 246] []}
+binhnt.event.feed Feed.Send send value {0xc4416d6120 [247 61 49 32 119 10 34 16 154 29 213 5 121 61 212 120 248 214 199 46 223 226 96 216 30 53 37 121 137 221 227 246] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4416d6120}
+binhnt.event.feed Feed.Send send value {0xc4416d6120}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.internal.ethapi.api PublicAccountAPI.Accounts  get list account
+binhnt.account.manager Wallets create wallets
+binhnt.eth.api PublicEthereumAPI.Coinbase  get coinbase
+binhnt.eth.api PublicEthereumAPI.Etherbase  get etherbase
+binhnt.eth.backend ResetWithGenesisBlock  get Etherbase
+binhnt.eth.api PrivateMinerAPI.SetEtherbase  set etherbase:  [217 238 77 8 168 107 67 5 68 37 79 249 94 50 170 111 204 29 49 99]
+binhnt.miner.worker.go worker.setEtherbase call mu.Lock() and set coinbase =  [217 238 77 8 168 107 67 5 68 37 79 249 94 50 170 111 204 29 49 99]
+binhnt.eth.api PrivateMinerAPI.Start  start mining with threads:  0xc441772110
+binhnt.eth.backend StartMining  start mining with number of threads:  4
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc441726510 [1 72 88 117 100 65 166 183 104 124 66 35 244 45 221 124 235 43 25 209 226 50 30 131 140 213 197 5 172 96 113 246] []} {0xc441726510}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc441726510 [1 72 88 117 100 65 166 183 104 124 66 35 244 45 221 124 235 43 25 209 226 50 30 131 140 213 197 5 172 96 113 246] []}
+binhnt.event.feed Feed.Send send value {0xc441726510 [1 72 88 117 100 65 166 183 104 124 66 35 244 45 221 124 235 43 25 209 226 50 30 131 140 213 197 5 172 96 113 246] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc441726510}
+binhnt.event.feed Feed.Send send value {0xc441726510}
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.core.blockchain BlockChain.InsertChain insert blocks
+binhnt.core.blockchain BlockChain.InsertChain call bc.insertChain
+binhnt.core.blockchain BlockChain.insertChain insert blocks
+binhnt.core.blockchain BlockChain.insertChain engine.VerifyHeaders
+binhnt.core.block_validator BlockValidator.ValidateBody start validate body
+binhnt.core.blockchain BlockChain.insertChain process each blocks
+binhnt.core.blockchain BlockChain.insertChain get parent block
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state_processor StateProcessor.Process start process
+binhnt.core.state_processor StateProcessor.Process  Iterate over and process the individual transactions 
+binhnt.core.blockchain BlockChain.insertChain  Validate the state using the default validator
+binhnt.core.block_validator BlockValidator.ValidateState start validate body
+binhnt.core.blockchain BlockChain.insertChain Write the block to the chain and get the status.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain_inserts insertStats.report  insert blockchain
+binhnt.core.blockchain BlockChain.InsertChain call bc.PostChainEvents
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc420353560 [115 134 255 63 212 112 230 84 195 137 225 55 135 163 54 31 59 74 11 54 72 169 249 229 253 50 4 221 52 103 204 205] []} {0xc420353560}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc420353560 [115 134 255 63 212 112 230 84 195 137 225 55 135 163 54 31 59 74 11 54 72 169 249 229 253 50 4 221 52 103 204 205] []}
+binhnt.event.feed Feed.Send send value {0xc420353560 [115 134 255 63 212 112 230 84 195 137 225 55 135 163 54 31 59 74 11 54 72 169 249 229 253 50 4 221 52 103 204 205] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc420353560}
+binhnt.event.feed Feed.Send send value {0xc420353560}
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+binhnt.miner.worker.go worker.resultLoop  event from resultCh.
+binhnt.core.state.statedb StateDB.Preimages  get Preimages
+binhnt.core.blockchain BlockChain.PostChainEvents  receive events =  [{0xc4417265a0 [43 41 92 165 52 66 156 97 98 213 223 224 24 179 63 2 151 70 27 89 2 163 137 216 196 251 118 53 33 170 249 138] []} {0xc4417265a0}]  logs =  []
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainFeed  {0xc4417265a0 [43 41 92 165 52 66 156 97 98 213 223 224 24 179 63 2 151 70 27 89 2 163 137 216 196 251 118 53 33 170 249 138] []}
+binhnt.event.feed Feed.Send send value {0xc4417265a0 [43 41 92 165 52 66 156 97 98 213 223 224 24 179 63 2 151 70 27 89 2 163 137 216 196 251 118 53 33 170 249 138] []}
+binhnt.core.blockchain BlockChain.PostChainEvents  send chainHeadFeed  {0xc4417265a0}
+binhnt.event.feed Feed.Send send value {0xc4417265a0}
+binhnt.core.chain_indexer ChainIndexer.newHead  create new header 
+binhnt.miner.worker.go worker.newWorkLoop  Event from chainHeadCh -> call commit function
+binhnt.miner.worker.go worker.mainLoop  event from newWorkCh -> commitNewWork
+binhnt.miner.worker.go worker.commitNewWork  commitNewWork start.
+binhnt.core.block_validator CalcGasLimit CalcGasLimit start
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.tx_pool TxPool.promoteExecutables  check accounts =   []
+binhnt.core.state.statedb New  create new statedb with db.OpenTrie
+binhnt.miner.worker.go worker.commit  commit start.
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.core.state.statedb StateDB.Copy  copy statedb to statedb
+binhnt.miner.worker.go worker.taskLoop  event taskCh:  Reject duplicate sealing work due to resubmitting 
+binhnt.consensus.clique.clique Clique.Seal attempting to create a sealed block using the local signing credentials
+binhnt.event.feed Feed.Send send value &{fdb1f815c8b8a87a 0 0 0 0 0 0 0 0 20000000000 {0 0 <nil>} {0 0 <nil>} {0 0 <nil>} {0 0 <nil>} map[] 0xc43133c180 63 0xc430e68740 {{0 0} 0 0 0 0}}
+binhnt.event.feed Feed.Send send value &{drop fdb1f815c8b8a87a980d096e8029e65f8e0862a26733aeb6c397ca2f57203bac EOF  <nil> <nil>}
+binhnt.miner.worker.go worker.newWorkLoop  Event from timer.C -> call commit function
+Fatal: Error starting protocol stack: datadir already used by another process
+Fatal: Error starting protocol stack: datadir already used by another process
+DEBUG[03-22|13:26:20.363] Sanitizing Go's GC trigger               percent=100
+INFO [03-22|13:26:20.364] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[03-22|13:26:20.364] FS scan times                            list=31.132µs set=3.216µs diff=2.087µs
+TRACE[03-22|13:26:20.364] Handled keystore changes                 time=39.429µs
+TRACE[03-22|13:26:20.365] Started watching keystore folder         path=/app/ethereum/network_eth_poa/node2/datadir/keystore
+INFO [03-22|13:26:20.365] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+INFO [03-22|13:26:20.365] Allocated cache and file handles         database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata cache=512 handles=524288
+INFO [03-22|13:26:20.518] Initialised chain configuration          config="{ChainID: 1112 Homestead: 1 DAO: <nil> DAOSupport: false EIP150: 2 EIP155: 3 EIP158: 3 Byzantium: 4 Constantinople: 5  ConstantinopleFix: <nil> Engine: clique}"
+INFO [03-22|13:26:20.519] Initialising Ethereum protocol           versions="[63 62]" network=1112
+INFO [03-22|13:26:20.634] Loaded most recent local header          number=98 hash=a7093c…32e8a1 td=197 age=25s
+INFO [03-22|13:26:20.634] Loaded most recent local full block      number=98 hash=a7093c…32e8a1 td=197 age=25s
+INFO [03-22|13:26:20.634] Loaded most recent local fast block      number=98 hash=a7093c…32e8a1 td=197 age=25s
+DEBUG[03-22|13:26:20.634] Reinjecting stale transactions           count=0
+INFO [03-22|13:26:20.634] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-22|13:26:20.634] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[03-22|13:26:20.634] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[03-22|13:26:20.639] Loaded voting snapshot from disk         number=0  hash=a1e0b6…abb714
+DEBUG[03-22|13:26:20.837] TCP listener up                          addr=[::]:30302
+DEBUG[03-22|13:26:20.837] InProc registered                        namespace=admin
+DEBUG[03-22|13:26:20.837] InProc registered                        namespace=admin
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=web3
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.838] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=txpool
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=personal
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=clique
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=eth
+INFO [03-22|13:26:20.839] New local node record                    seq=2 id=cc464e03dd9287d6 ip=127.0.0.1 udp=0 tcp=30302
+INFO [03-22|13:26:20.839] Started P2P networking                   self="enode://856e2626925056cbb2bfc16c5d75174b106226c2a89e3c77dc8975ae2589c5681f5f04ed25ff61621cddaeee703de0db6924ddc279d3666420d4c13db27a2d6a@127.0.0.1:30302?discport=0"
+DEBUG[03-22|13:26:20.839] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=miner
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=eth
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=admin
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=debug
+DEBUG[03-22|13:26:20.840] InProc registered                        namespace=net
+DEBUG[03-22|13:26:20.840] IPC registered                           namespace=admin
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=admin
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=web3
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=txpool
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=personal
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=clique
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.841] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=miner
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=eth
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=admin
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=debug
+DEBUG[03-22|13:26:20.842] IPC registered                           namespace=net
+INFO [03-22|13:26:20.842] IPC endpoint opened                      url=/app/ethereum/network_eth_poa/node2/datadir/geth.ipc
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=admin
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=admin
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=web3
+DEBUG[03-22|13:26:20.842] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=txpool
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=personal
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=miner
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=eth
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=admin
+DEBUG[03-22|13:26:20.843] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.844] HTTP registered                          namespace=debug
+DEBUG[03-22|13:26:20.844] HTTP registered                          namespace=net
+INFO [03-22|13:26:20.844] HTTP endpoint opened                     url=http://0.0.0.0:8502                                  cors=* vhosts=localhost
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{stack:0xc4203faa00} namespace=web3
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{b:0xc42025c260}     namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{b:0xc42025c260}     namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service="&{b:0xc42025c260 nonceLock:0xc42025c920}" namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{am:0xc420284c30}                         namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{e:0xc420374000}                          namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service=&{e:0xc420374000}                          namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service="&{d:0xc420102340 mux:0xc4202585d0 installSyncSubscription:0xc43182a120 uninstallSyncSubscription:0xc43182a180}" namespace=eth
+DEBUG[03-22|13:26:20.844] WebSocket registered                     service="&{backend:0xc42025c260 mux:0xc4202585d0 quit:<nil> chainDb:0xc42012b3f0 events:0xc43182c0a0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[03-22|13:26:20.845] WebSocket registered                     service="&{net:0xc4203fac80 networkVersion:1112}"                                                                                               namespace=net
+DEBUG[03-22|13:26:20.845] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [03-22|13:26:20.845] WebSocket endpoint opened                url=ws://[::]:8542
+DEBUG[03-22|13:26:21.638] Rejected conn (not whitelisted in NetRestrict) addr=147.46.121.120:55662
+DEBUG[03-22|13:26:21.680] Rejected conn (not whitelisted in NetRestrict) addr=161.117.84.109:49284
+INFO [03-22|13:26:21.773] Unlocked account                         address=0x2E5B167f68f04918d75F5a6f577A6eA6320225C0
+INFO [03-22|13:26:21.773] Transaction pool price threshold updated price=1000
+INFO [03-22|13:26:21.773] Transaction pool price threshold updated price=1000
+INFO [03-22|13:26:21.773] Commit new mining work                   number=99 sealhash=46a8b4…d53180 uncles=0 txs=0 gas=0 fees=0 elapsed=117.879µs
+INFO [03-22|13:26:21.773] Signed recently, must wait for others 
+DEBUG[03-22|13:26:23.229] Rejected conn (not whitelisted in NetRestrict) addr=147.46.121.120:56584
+DEBUG[03-22|13:26:23.586] Rejected conn (not whitelisted in NetRestrict) addr=92.116.94.101:51482
+DEBUG[03-22|13:26:24.491] Rejected conn (not whitelisted in NetRestrict) addr=165.132.172.7:58956
+DEBUG[03-22|13:26:25.056] Rejected conn (not whitelisted in NetRestrict) addr=157.230.141.142:45350
+INFO [03-22|13:26:27.637] Got interrupt, shutting down... 
+INFO [03-22|13:26:27.637] WebSocket endpoint closed                url=ws://0.0.0.0:8542
+DEBUG[03-22|13:26:27.637] RPC Server shutdown initiatied 
+INFO [03-22|13:26:27.637] HTTP endpoint closed                     url=http://0.0.0.0:8502
+DEBUG[03-22|13:26:27.637] RPC Server shutdown initiatied 
+INFO [03-22|13:26:27.637] IPC endpoint closed                      url=/app/ethereum/network_eth_poa/node2/datadir/geth.ipc
+DEBUG[03-22|13:26:27.637] RPC Server shutdown initiatied 
+INFO [03-22|13:26:27.638] Writing cached state to disk             block=98 hash=a7093c…32e8a1 root=db5277…84e6c5
+INFO [03-22|13:26:27.638] Persisted trie from memory database      nodes=0 size=0.00B time=6.753µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-22|13:26:27.638] Writing cached state to disk             block=97 hash=ed5ef2…6482f1 root=db5277…84e6c5
+INFO [03-22|13:26:27.638] Persisted trie from memory database      nodes=0 size=0.00B time=2.63µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-22|13:26:27.638] Blockchain manager stopped 
+INFO [03-22|13:26:27.638] Stopping Ethereum protocol 
+INFO [03-22|13:26:27.638] Ethereum protocol stopped 
+INFO [03-22|13:26:27.638] Transaction pool stopped 
+INFO [03-22|13:26:27.638] Database closed                          database=/app/ethereum/network_eth_poa/node2/datadir/geth/chaindata
+DEBUG[03-22|13:26:27.638] Read error                               err="accept tcp [::]:30302: use of closed network connection"
+TRACE[03-22|13:26:27.638] P2P networking is spinning down 
