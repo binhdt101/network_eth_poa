@@ -48,8 +48,9 @@ geth \
 --password passfile  \
 --syncmode full \
 --ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
+--verbosity 5 \
 console
 # 2> geth.log &
 #--nodiscover \
-# --verbosity 5 \
+
 #--netrestrict 103.126.156.0/24,172.101.0.0/24 \
