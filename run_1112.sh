@@ -32,10 +32,12 @@ esac
 
 nohup geth \
 --port $P2PPORT --rpcport $RPCPORT \
---syncmode full --datadir $NODENAME/datadir \
+--datadir $NODENAME/datadir \
 --rpc --rpcaddr 0.0.0.0   \
 --rpcapi 'eth,admin' \
---networkid 1112 --gasprice 1000   --targetgaslimit '9000000' \
+--networkid 1112 \
+--gasprice 1000  \
+ --targetgaslimit 9000000 \
 --rpccorsdomain '*' \
 --mine  \
 --minerthreads 30  \
@@ -43,8 +45,10 @@ nohup geth \
 --etherbase "$ACCOUNT" \
 --nat none \
 --password passfile  \
---nodiscover \
---netrestrict 103.126.156.0/24,172.101.0.0/24 \
+
+#--netrestrict 103.126.156.0/24,172.101.0.0/24 \
 2> geth.log &
+#--nodiscover \
+#--syncmode full
 #--ws --wsaddr 0.0.0.0 --wsport $WSPORT --wsorigins='*' \
 # --verbosity 5 \
